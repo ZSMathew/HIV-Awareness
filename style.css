@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e63946;
+  color: white;
+  padding: 15px 30px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2em;
+  padding-left: 40px;
+}
+
+.nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  padding: 50px;
+}
+
+.hero {
+  background: url('https://via.placeholder.com/900x400') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+}
+
+.hero-content p {
+  margin: 20px 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  background-color: #e63946;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.about {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.impact {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.stories {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.story {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.story img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.footer {
+  background-color: #e63946;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.footer .social a {
+  margin: 0 10px;
+  color: white;
+  font-size: 1.5em;
+}
+
+.footer .newsletter form {
+  margin-top: 15px;
+}
+
+.footer input[type="email"] {
+  padding: 10px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+}
+
+.footer button {
+  padding: 10px 15px;
+  background: white;
+  color: #e63946;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

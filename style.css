@@ -62,6 +62,9 @@ body {
   text-align: center;
   background-color: #fff;
 }
+h2{
+  color: #e63946;
+}
 
 .impact {
   padding: 40px 20px;
@@ -104,7 +107,12 @@ body {
   margin: 0 10px;
   color: white;
   font-size: 1.5em;
+  float: left;
 }
+/* .footer .social img{
+  width: 60px;
+  height: 40px;
+} */
 
 .footer .newsletter form {
   margin-top: 15px;

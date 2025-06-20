@@ -11,114 +11,144 @@
             padding-left: 150px;
             padding-right: 150px;
             text-align: center;
-
         }
-
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #e63946;
+            color: white;
+            padding: 15px 30px;
+        }
+        
+        .logo {
+            font-weight: bold;
+            font-size: 1.2em;
+            padding-left: 40px;
+        }
+        
+        .nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            padding: 30px;
+        }
+        
         h1 {
             background-color: red;
             color: white;
             align-items: center;
             text-align: center;
-             padding-bottom: 40px;
-
+            padding-bottom: 40px;
         }
-
+        
         .article {
             display: flex;
             column-gap: 30px;
             text-align: center;
             justify-content: center;
         }
-
+        
         .fact {
-
             display: flex;
             width: 20%;
             margin: 10px;
-            gap: 30px; 
+            gap: 30px;
             text-align: center;
             justify-content: center;
             align-items: center;
             gap: 20px;
             padding-left: 300px;
-            
-
         }
-        img{
+        
+        img {
             width: 150px;
             height: 150px;
             padding: 15px;
-            position: relative;}
-
-         button {
+            position: relative;
+        }
+        
+        button {
             background-color: red;
             color: white;
             /* border-radius: 10px; */
             width: 200px;
             height: 40px;
         }
-.button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
         h2 {
             display: flex;
             text-align: center;
             justify-content: center;
         }
-
-    
-        footer{
+        
+        footer {
             background-color: red;
             text-align: center;
             width: 100%;
             /* padding: 10px; */
             padding-bottom: 80px;
             margin-top: 18px;
-              }
+        }
     </style>
 </head>
 
 <body>
+    <header class="header">
+        <div class="logo">🎗 HIV Awareness</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="learn.html">Learn</a>
+            <a href="community.html">Community</a>
+            <a href="volenteer.html">Volunteer</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
     <h1>LEARN ABOUT HIV</h1>
     <div class="container">
         <h2>Articles & Resources</h2>
-    
-    <div class="article">
-        <div>
-            
-            <h3>Understanding HIV and<br> AIDS</h3>
-            <p>Learn the key difference between<br>HIV and AIDS and how they affect<br>immune system.</p>
+
+        <div class="article">
+            <div>
+
+                <h3>Understanding HIV and<br> AIDS</h3>
+                <p>Learn the key difference between<br>HIV and AIDS and how they affect<br>immune system.</p>
+            </div>
+            <div>
+
+                <h3>Prevention Strategies</h3>
+                <p>Explore effective ways to prevent<br>the spread of HIV and protect <br> yourself and others</p>
+            </div>
         </div>
-        <div>
-            
-            <h3>Prevention Strategies</h3>
-            <p>Explore effective ways to prevent<br>the spread of HIV and protect <br> yourself and others</p>
+        <h1>HIV FACTS</h1>
+        <div class="fact">
+            <div>
+                <img src="test.png"> MILLION Americans
+                <br>living with HIV
+            </div>
+            <div><img src="prevention.png">HIV can<br>be prevented</div>
+            <div><img src="ribon.png">TREATMENT<br>IS AVAILABLE</div>
+            <div><img src="virus.png">HIV is not<br><b>spread by</b><br>casual contact</div>
         </div>
-    </div>
-    <h1>HIV FACTS</h1>
-    <div class="fact">
+        <h2>Videos</h2>
         <div>
-            <img src="test.png"> MILLION
-            Americans<br>living with HIV
-        </div>
-        <div><img src="prevention.png">HIV can<br>be prevented</div>
-         <div><img src="ribon.png">TREATMENT<br>IS AVAILABLE</div>
-        <div><img src="virus.png">HIV is not<br><b>spread by</b><br>casual contact</div>
-    </div>
-    <h2>Videos</h2>
-    <div>
-        <video>
+            <video>
             
         </video>
+        </div>
+        <h2>Downloadable Resources</h2>
+        <div class="button"><button>VIEW ALL RESOURCES</button></div>
     </div>
-    <h2>Downloadable Resources</h2>
-    <div class="button"><button>VIEW ALL RESOURCES</button></div>
-</div>
-     <footer>
-        
-       </footer>
+    <footer>
+
+    </footer>
 </body>
 
 </html>

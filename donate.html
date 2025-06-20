@@ -14,8 +14,30 @@
             padding-right: 1rem;
 
         }
+        .dropdown{
+            float: left;
+            overflow: hidden;
+
+        }
+        .dropdown .dropbtn{
+            font-size: 16px;
+            padding: 14px 20px;
+        }
+        .dropdown-content{
+            position: absolute;
+            min-width: 160px;
+            z-index: 1;
+            
+        }
+        .dropdown-content a{
+            display: block;
+            text-align: left;
+            padding: 12px 16px;
+        }
+
         h2{
-            color: black;
+            color: white;
+            background-color: red;
         }
         .part0{
             display: flex;
@@ -62,9 +84,26 @@
         <img src="dona.jpg">
         <div class="part1">
             <h2>Through Phones</h2>
+            <!--Dropdown menu-->
+            <div class="dropdown">
+                <button class="dropbtn">Mobile Peyment</button>
+                <div class="dropdown-content">
+                    <a href="#">Lipa number</a><br>
+                    <a href="#">Lipa Menu</a><br>
+                    <a href="#">Pey Direct</a>
+                </div>
+            </div>
             </div>
             <div class="part2">
-              <h2>Through Banks</h2>  
+              <h2>Banks Peyments</h2> 
+               <div class="dropdown">
+                <button class="dropbtn">Mobile Peyment</button>
+                <div class="dropdown-content">
+                    <a href="#">Account number</a><br>
+                    <a href="#">Lipa Menu</a><br>
+                    <a href="#">Pey Direct</a>
+                </div>
+            </div> 
             </div>
         </div>
         <hr>

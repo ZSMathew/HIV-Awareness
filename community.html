@@ -9,10 +9,6 @@
             font-family: Sans-Serif;
         }
         
-        h2 {
-            color: red;
-        }
-        
         .header {
             display: flex;
             justify-content: space-between;
@@ -44,12 +40,47 @@
             border-top: 1px solid #eee;
         }
         
+        .Live {
+            width: 75px;
+            height: 75px;
+            display: flex;
+        }
+        
         img {
+            display: flex;
+            align-items: center;
             border-radius: 50%;
         }
         
-        .Forum {
-            display: inline-flex;
+        .comm {
+            border-radius: 8px;
+            padding: 25px;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+            display: flex;
+            text-align: left;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #f8f9fa;
+        }
+        
+        section {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h2 {
+            color: red;
+            margin-top: 0;
+            text-align: left;
+        }
+        
+        p {
+            line-height: 1.6;
+            color: #444;
+            text-align: left;
         }
     </style>
 </head>
@@ -62,36 +93,43 @@
             <a href="learn.html">Learn</a>
             <a href="community.html">Community</a>
             <a href="volenteer.html">Volunteer</a>
-            <a href="./contact.html">Contact</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
-    <div>
-        <h1>Community</h1>
-        <p>Join discussions, forums and Q&A sessions with health experts here.</p>
+    <section>
+        <h1><u>Community</u></h1>
+        <span>Join discussions, forums and Q&A sessions with health experts here.</span>
 
-        <br><br>
-        <div class="Forum">
-            <div><img src="C:\Users\user\Desktop\Forums & Live Chats">
+        <br>
+        <div class="comm">
+            <div><img src="Forums & Live Chats.jpeg" alt="" class="Live"></div>
+            <div>
+
                 <h2>Forums and Live Chats</h2>
                 <p>Engage in our community forums and join live chat sessions to connect and share experiences.</p>
             </div>
         </div>
         <br>
-        <div>
-            <h2>Integration with Elimika Kiganjani</h2>
-            <p>Access additional resources and discussions effortlessly through Elimika Kiganjani platform.</p>
+        <div class="comm">
+            <div><img src="Elimika Kiganjani.jpeg" alt=""></div>
+            <div>
+                <h2>Integration with Elimika Kiganjani</h2>
+                <p>Access additional resources and discussions effortlessly through Elimika Kiganjani platform.</p>
+            </div>
         </div>
         <br>
-        <div>
-            <h2>Q&A with Doctors</h2>
-            <p>Participate in regular questions and answer sessions with qualified health professionals.</p>
+        <div class="comm">
+            <div><img src="Q&A.jpeg" alt=""></div>
+            <div>
+
+                <h2>Q&A with Doctors</h2>
+                <p>Participate in regular questions and answer sessions with qualified health professionals.</p>
+            </div>
         </div>
-    </div>
+    </section>
     <footer>
         <p>&copy; 2025 HIV Awareness Initiative. All rights reserved.</p>
     </footer>
 </body>
-
-</html>
 
 </html>

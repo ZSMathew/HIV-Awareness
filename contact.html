@@ -6,7 +6,7 @@
     <title>CONTACTS</title>
     <style>
         body{
-            background-color: antiquewhite;
+            background-color: rgb(234, 43, 43);
         }  
          
         .container{
@@ -40,14 +40,17 @@
 
         .boxes{
                display: flex;
+               justify-content: center;
                 }
 
         .box1{
             background-color: white;
-            padding: 10px;
-            max-width: fit-content;
+            padding-right: 70px;
+            padding-bottom: 30px;
+            padding-left: 15px;
+            height: 100%;
             margin: 20px;
-            /* float:left; */
+            
         }
 
         #submit{
@@ -58,10 +61,11 @@
         }
 
         .box2{
-            background-color: beige;
-            width: 100%;
+            background-color: white;
             height: 100%;
-            margin: 20px; 
+            margin: 20px;
+            padding-right: 10px; 
+            padding-bottom: 40px;
         }
        
           .location{
@@ -147,20 +151,20 @@
          <input id="email"  type="email" name="email" placeholder="Email required">
          <br>
          <p>Message</p>
-         <input id="Message" type="message" name="message" >
+        <textarea id="message" name="message" rows="5" required></textarea>
          <br><br>
          <input id="submit" type="submit" value="Send">
       </div>
        
       <div class="box2">
-         <h3>Contacts Information</h3>
+         <h3 style="text-align: center;">Contacts Information</h3>
           <div class="location">
               <div class="locicon">
                 <img src="./images/location icon.png" alt="location icon">
               </div>
                 <div class="locinfo">
-                    <h5>location</h5>
-                    <p>1234 Health St,Cityville,AB 12345</p>
+                    <h5 >Location</h5>
+                    <p style="font-weight: bold;">1234 Health St,Cityville,AB 12345</p>
                 </div>
           </div>
 
@@ -169,7 +173,7 @@
                 <img src="./images/email icon.png" alt="email icon">
               </div>
                 <div class="eminfo">
-                    <p>info@hivawareness.org</p>
+                    <p style="font-weight: bold;">info@hivawareness.org</p>
                 </div>
           </div>
 
@@ -182,7 +186,7 @@
 
            <div class="birdicons">
             <div class="birdicon1"><img src="./images/bird icon.jpg" alt="bird"></div>
-            <div class="birdicon2"><img src="./images/bird icon.jpg" alt="bird"></div>
+            <div class="birdicon2"><h5>Let Us fly Together</h5></div>
           </div>
      </div>
 

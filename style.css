@@ -58,42 +58,70 @@ body {
 }
 
 .about {
-  padding: 40px 20px;
+  background-color: #f9f9f9;
+  padding: 40px;
   text-align: center;
-  background-color: #fff;
+  /* padding: 40px 20px;
+  text-align: center;
+  background-color: #fff; */
 }
-h2{
+
+.about h2 {
+  color: #b30059;
+  font-size: 28px;
+  margin: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  color: #333;
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+h2 {
   color: #e63946;
 }
 
-.impact {
-  padding: 40px 20px;
-  background-color: #f9f9f9;
+#impact-stories {
   text-align: center;
+  padding: 40px;
+  background-color: #fff;
 }
 
-.stories {
+.stories-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
   margin-top: 20px;
-  flex-wrap: wrap;
 }
 
 .story {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  width: 250px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 300px;
 }
 
 .story img {
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  margin-bottom: 10px;
+}
+
+.pagination {
+  margin-top: 30px;
+}
+
+.pagination button {
+  padding: 8px 16px;
+  margin: 0 5px;
+  background-color: #b30059;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .footer {
@@ -109,6 +137,7 @@ h2{
   font-size: 1.5em;
   float: left;
 }
+
 /* .footer .social img{
   width: 60px;
   height: 40px;
@@ -131,5 +160,5 @@ h2{
   color: #e63946;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
+  cursor: pointer;
 }

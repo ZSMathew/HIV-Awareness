@@ -5,8 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate</title>
     <style>
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #e63946;
+            color: white;
+            padding: 15px 30px;
+        }
+        
+        .logo {
+            font-weight: bold;
+            font-size: 1.2em;
+            padding-left: 40px;
+        }
+        
+        .nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            padding: 30px;
+        }
         .donate{
-            background-color: #ff6f61;
+            background-color: #e63946;
              border: 0px solid #ff6f61;
         }
         img{
@@ -60,6 +81,16 @@
     </style>
 </head>
 <body>
+     <header class="header">
+        <div class="logo">🎗 HIV Awareness</div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="learn.html">Learn</a>
+            <a href="community.html">Community</a>
+            <a href="volenteer.html">Volunteer</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
     <div class="donate">
         <h1>Donate Here.</h1>
         <!-- <a href="volenteer.html">Volunteer</a> -->
@@ -76,7 +107,7 @@
             </div>
             </div>
         </div>
-        <hr>
+        <hr style="color: red;">
         <div class="part">
         <div class="part2">
         <h2 style="color: white;">Program Discription</h2>

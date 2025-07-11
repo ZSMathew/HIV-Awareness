@@ -1,6 +1,8 @@
 {
-	"folders": [],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "ZIARA Project -1"
-	}
+	"folders": [
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {}
 }

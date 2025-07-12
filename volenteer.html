@@ -13,9 +13,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #e63946;
+  background-color: red;
   color: white;
-  padding: 15px 30px;
+  padding: 25px 30px;
   width: cover;
 }
 .nav a {
@@ -23,6 +23,36 @@
   margin-left: 20px;
   text-decoration: none;
   padding: 50px;
+}
+ .parts{
+   display: flex; 
+}
+.bar{
+ border-radius: 8px;
+         padding: 25px;
+        margin: 1px 4rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+        text-align: left;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #f8f9fa; 
+        height: 16rem;
+}
+h1, h2 {
+    text-align: center;
+    color: red;
+}
+button{
+    background-color: rgb(239, 224, 8);
+    position-area: center;
+    direction: none;
+}
+footer{
+    background-color: #500d13;
+    color: white;
+  text-align: center;
+  padding: 18px 20px;
+  float: bottom;
 }
     </style>
 </head>
@@ -38,12 +68,27 @@
         </nav>
     </header>
     <h1>Volunteer & Donate</h1>
-    <p>Support our compaigns by voluteering or donating</p>
-    <hr>
-    <div class="bar1">
+    <p style="text-align: center;">Support our compaigns by voluteering by Participating in different activity or donating by contibuting</p>
+    <hr><br>
+    <div class="parts">
+    <div class="bar">
     <h2>Volunteer Here</h2>
-    <p>Be the spark for change—volunteer with us<br> in HIV awareness programs to educate, uplift,<br> and unite communities against stigma and infection.</p>
+    <p>Be the spark for change—volunteer with us<br>
+         in HIV awareness programs to educate, uplift,<br> and
+         unite communities against stigma and infection.</p>
     <button><a href="#">Volunteer Now</a></button>
     </div>
+    <div class="bar">
+        <h2>Donate Here</h2>
+        <p>Help us fight HIV with hope—donate today<br>
+             to support vital programs, outreach, and life-changing<br>
+              education in communities that need it most.</p>
+        <button><a href="donate.html">Donate Now</a></button>
+    </div>
+    </div>
+    <hr><br><br>
+    <footer>
+        &copy; 2025 HIV Awareness Initiative. All rights reserved.
+    </footer>
 </body>
 </html>

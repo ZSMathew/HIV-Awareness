@@ -11,18 +11,24 @@
         }
         .header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: red;
-  color: white;
+  color: red;
   padding: 25px 30px;
-  width: cover;
+  font-size: xx-large;
+}
+img{
+    width: 5rem;
+    height: 5rem;
+}
+nav{
+    background-color: red;
+    padding: 20px 1px;
+    text-align: center;
+    gap: 3rem;
 }
 .nav a {
   color: white;
   margin-left: 20px;
   text-decoration: none;
-  padding: 50px;
 }
  .parts{
    display: flex; 
@@ -42,10 +48,21 @@ h1, h2 {
     text-align: center;
     color: red;
 }
-button{
-    background-color: rgb(239, 224, 8);
-    position-area: center;
-    direction: none;
+
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+   background-color: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 1rem;
+  font-size: 16px;
+   margin-left: 140px; 
+  margin-top: 30px;
+}
+
+.button-link:hover {
+  background-color: #45a049;
 }
 footer{
     background-color: #500d13;
@@ -58,7 +75,9 @@ footer{
 </head>
 <body>
 <header class="header">
-        <div class="logo">🎗 HIV Awareness</div>
+        <!-- <img src="./images/logo.png"> -->
+        <b>RED RIBBON INITIATIVE</b>
+         </header>
         <nav class="nav">
             <a href="index.html">Home</a>
             <a href="learn.html">Learn</a>
@@ -66,7 +85,6 @@ footer{
             <a href="volenteer.html">Volunteer</a>
             <a href="./contact.html">Contact</a>
         </nav>
-    </header>
     <h1>Volunteer & Donate</h1>
     <p style="text-align: center;">Support our compaigns by voluteering by Participating in different activity or donating by contibuting</p>
     <hr><br>
@@ -76,14 +94,16 @@ footer{
     <p>Be the spark for change—volunteer with us<br>
          in HIV awareness programs to educate, uplift,<br> and
          unite communities against stigma and infection.</p>
-    <button><a href="#">Volunteer Now</a></button>
+    <button style="background: none; border: none; color: red; font-size: 16px; cursor: pointer;">
+        <a href="#" class="button-link">Volunteer Now</a></button>
     </div>
     <div class="bar">
         <h2>Donate Here</h2>
         <p>Help us fight HIV with hope—donate today<br>
              to support vital programs, outreach, and life-changing<br>
               education in communities that need it most.</p>
-        <button><a href="donate.html">Donate Now</a></button>
+        <button style="background: none; border: none; color: red; font-size: 16px; cursor: pointer;">
+            <a href="donate.html" class="button-link">Donate Now</a></button>
     </div>
     </div>
     <hr><br><br>

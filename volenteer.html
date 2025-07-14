@@ -10,18 +10,19 @@
             background-color: rgb(235, 228, 216);
         }
         .header {
-  display: flex;
   color: red;
-  padding: 15px 1px;
-  font-size: xx-large;
-    align-items: center;
-    justify-content: center;
+  padding: 0px 1px;
+  font-size: 4.5rem;
+   text-align: center;
 
 }
 img{
-    width: 5rem;
-    height: 5rem;
-      margin-right: 15rem;
+    width: 7rem;
+    height: 7rem;
+    align-items: center;
+}
+.image{
+    align-items: center;
 }
 nav{
     background-color: red;
@@ -32,6 +33,13 @@ nav{
   color: white;
   margin-left: 20px;
   text-decoration: none;
+   padding: 40px;
+}
+.nav a:hover{
+    background-color: white;
+    padding: 6px 7px;
+    border-radius: 1rem;
+    color: black;
 }
  .parts{
    display: flex; 
@@ -78,9 +86,9 @@ footer{
 </head>
 <body>
 <header class="header">
-        <img src="./images/logo.png">
-        <div class="title"><b>RED RIBBON INITIATIVE</b>
+        <div class="image"><img src="./images/logo.png">
             </div>
+        <b>RED RIBBON INITIATIVE</b>
          </header>
         <nav class="nav">
             <a href="index.html">Home</a>
@@ -90,6 +98,7 @@ footer{
             <a href="./contact.html">Contact</a>
         </nav>
     <h1>Volunteer & Donate</h1>
+    <br><br>
     <div class="parts">
     <div class="bar">
     <h2>Volunteer Here</h2>
@@ -105,12 +114,12 @@ footer{
              to support vital programs, outreach, and life-changing<br>
               education in communities that need it most.</p>
         <button style="background: none; border: none; color: red; font-size: 16px; cursor: pointer;">
-            <a href="donate.html" class="button-link">Donate Now</a></button>
+            <a href="#" class="button-link">Donate Now</a></button>
     </div>
     </div>
-    <hr>
+    <br><br>
     <footer>
-        &copy; 2025 HIV Awareness Initiative. All rights reserved.
+        &copy; 2025 Red Ribbon Initiative. All rights reserved.
     </footer>
 </body>
 </html>

@@ -73,6 +73,38 @@ h1, h2 {
 .button-link:hover {
   background-color: #45a049;
 }
+ .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn {
+      color: white;
+      padding: 15px 20px;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #ffffff;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #000;
+      padding: 15px 20px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
 footer{
     background-color: #960411;
     color: white;
@@ -103,16 +135,29 @@ footer{
     <p>Be the spark for change—volunteer with us<br>
          in HIV awareness programs to educate, uplift,<br> and
          unite communities against stigma and infection.</p>
+    <div class="dropdown">
     <button style="background: none; border: none; color: red; font-size: 16px; cursor: pointer;">
-        <a href="#" class="button-link">Volunteer Now</a></button>
+        <a href="#" class="button-link">Volunteer Now &#9662;</a></button>
+     <div class="dropdown-content">
+    <a href="#">Register fom volenteer</a>
+    <a href="#">Fill the FOrm</a>
+  </div>
+</div>        
     </div>
     <div class="bar">
         <h2>Donate Here</h2>
         <p>Help us fight HIV with hope—donate today<br>
              to support vital programs, outreach, and life-changing<br>
               education in communities that need it most.</p>
+    <div class="dropdown">        
         <button style="background: none; border: none; color: red; font-size: 16px; cursor: pointer;">
-            <a href="#" class="button-link">Donate Now</a></button>
+            <a href="#" class="button-link">&#9662; Donate Now</a></button>
+     <div class="dropdown-content">
+    <a href="#">Azam Pesa</a>
+    <a href="#">Selcom Pesa</a>
+    <a href="#">Money Gum</a>
+  </div>
+</div>        
     </div>
     </div>
     <hr><br><br><br><br><br><br><br>

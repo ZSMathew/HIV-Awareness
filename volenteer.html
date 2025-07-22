@@ -76,7 +76,8 @@ h1, h2 {
 
  .dropdown {
       position: relative;
-      display: inline-block;
+      display: inline-block; 
+      margin-bottom: 4rem;
     }
 
     .dropbtn {
@@ -145,9 +146,17 @@ footer{
     <form>
         <b style="color: red;">Register Now</b><br><br>
       <input type="text" placeholder="Full Name" required><br><br>
-      <input type="email" placeholder="Phone Number" required><br><br>
+      <input type="phone number" placeholder="Phone Number" required><br><br>
       <input type="email" placeholder="Email" required><br><br>
-      <input type="submit" value="Submit">
+       <div class="section">
+       <b style="color: red;">Gender</b><br>
+    <form required="true">
+      <label><input type="radio" name="gender" value="male"> Male</label><br>
+      <label><input type="radio" name="gender" value="female"> Female</label><br>
+      <label><input type="radio" name="gender" value="other"> Other</label>
+    </form>
+  </div><br>
+      <input type="submit " value="Submit">
     </form>
   </div>
 </div>     

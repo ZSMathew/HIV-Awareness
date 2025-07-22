@@ -107,7 +107,18 @@ h1, h2 {
     .dropdown:hover .dropdown-content {
       display: block;
     }
-   
+   /* payment */
+    .payment-option {
+      font-size: 20px;
+      margin: 20px;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .payment-option:hover {
+      color: green;
+      text-decoration: underline;
+    }
 
 footer{
     background-color: #960411;
@@ -170,8 +181,22 @@ footer{
         <button style="background: none; border: none; color: red; font-size: 16px; cursor: pointer;">
             <a href="#" class="button-link">&#9662; Donate Now</a></button>
      <div class="dropdown-content">
-    <a href="#">Azam Pesa</a>
-    <a href="#">Selcom Pesa</a>
+      <div class="payment-option" onclick="payWithAzam()">Azam Pesa</div>
+  <div class="payment-option" onclick="payWithSelcom()">Selcom Pesa</div>
+
+  <script>
+    function payWithAzam() {
+      // Replace this with actual Azam API integration
+      alert("Redirecting to Azam Pesa Payment...");
+      window.location.href = "https://azam.payment.api/initiate"; // example only
+    }
+
+    function payWithSelcom() {
+      // Replace this with actual Selcom API integration
+      alert("Redirecting to Selcom Pesa Payment...");
+      window.location.href = "https://selcom.payment.api/initiate"; // example only
+    }
+  </script>
   </div>
 </div>        
     </div>

@@ -5,23 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volunteer</title>
     <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: rgb(235, 228, 216);
-        }
-        .header {
-  color: white;
-  background-color: red;
-  padding: 0px 1px;
-  font-size: 4.5rem;
-   text-align: center;
+body{
+font-family: Arial, Helvetica, sans-serif;
+background-color: rgb(235, 228, 216);
+}
+
+/* header */
+.header {
+color: white;
+background-color: red;
+padding: 0px 1px;
+font-size: 4.5rem;
+text-align: center;
 
 }
+
+/* logo */
 img{
     width: 7rem;
     height: 7rem;
   float: left;
 }
+
+/* nav bar */
 nav{
     background-color: red;
     padding: 10px 1px;
@@ -39,25 +45,28 @@ nav{
     border-radius: 1rem;
     color: black;
 }
+
+/* parts */
  .parts{
    display: flex; 
 }
+
+/* both part */
 .bar{
  border-radius: 8px;
-         padding: 25px;
-        margin: 1px 4rem;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
-        text-align: left;
-        width: 100%;
-        box-sizing: border-box;
-        background-color: #f8f9fa; 
-        height: 16rem;
+ padding: 25px;
+ margin: 1px 4rem;
+ box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+ text-align: left;
+ width: 100%;
+ box-sizing: border-box;
+ background-color: #f8f9fa; 
+ height: 16rem;
 }
 h1, h2 {
     text-align: center;
     color: red;
 }
-
 .button-link {
   display: inline-block;
   padding: 10px 20px;
@@ -69,17 +78,16 @@ h1, h2 {
    margin-left: 140px; 
   margin-top: 30px;
 }
-
 .button-link:hover {
   background-color: #45a049;
 }
 
+/* part right */
  .dropdown {
       position: relative;
       display: inline-block; 
       margin-bottom: 4rem;
     }
-
     .dropbtn {
       color: white;
       padding: 15px 20px;
@@ -87,7 +95,6 @@ h1, h2 {
       border: none;
       cursor: pointer;
     }
-
     .dropdown-content {
       display: none;
       position: absolute;
@@ -96,17 +103,16 @@ h1, h2 {
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
     }
-
     .dropdown-content a {
       color: #000;
       padding: 15px 20px;
       text-decoration: none;
       display: block;
     }
-
     .dropdown:hover .dropdown-content {
       display: block;
     }
+
    /* payment */
     .payment-option {
       font-size: 20px;
@@ -120,6 +126,65 @@ h1, h2 {
       text-decoration: underline;
     }
 
+    /* part left */
+    .display{
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    }
+    .display-content{
+       position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, 20px) scale(0);
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s ease;
+      width: 350px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      padding: 20px;
+      z-index: 100;
+    }
+
+      /* Show form when hovering the button */
+    .display:hover .display-content {
+      transform: translate(-50%, 20px) scale(1);
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+     /* Inside form */
+    .display-content input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    label{
+      color: black;
+      margin-bottom: 2rem;
+    }
+    .display-content button {
+      width: 100%;
+      background-color: red;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .display-content button:hover {
+      background-color: #218838;
+    }
+
+/* footer */
 footer{
     background-color: #960411;
     color: white;
@@ -130,11 +195,14 @@ footer{
     </style>
 </head>
 <body>
+  <!-- header -->
 <header class="header">
         <div class="image"><img src="./images/logo.png">
             </div>
         <b>RED RIBBON INITIATIVE</b>
          </header>
+
+         <!-- nav bar -->
         <nav class="nav">
             <a href="index.html">Home</a>
             <a href="learn.html">Learn</a>
@@ -142,6 +210,8 @@ footer{
             <a href="volenteer.html">Volunteer</a>
             <a href="./contact.html">Contact</a>
         </nav>
+
+        <!-- part left -->
     <h1>Volunteer & Donate</h1>
     <hr><br><br><br>
     <div class="parts">
@@ -150,28 +220,31 @@ footer{
     <p>Be the spark for change—volunteer with us<br>
          in HIV awareness programs to educate, uplift,<br> and
          unite communities against stigma and infection.</p>
-         <div class="dropdown">  
+         <div class="display">  
     <button style="background: none; border: none; color: red; font-size: 16px; cursor: pointer;">
         <a href="#" class="button-link">&#9662; Volunteer Now</a></button>  
-        <div class="dropdown-content">
+        <div class="display-content">
     <form>
-        <b style="color: red;">Register Now</b><br><br>
+        <h2><b style="color: red;">Register Now</b></h2><br><br>
       <input type="text" placeholder="Full Name" required><br><br>
-      <input type="phone number" placeholder="Phone Number" required><br><br>
+      <input type="intager" placeholder="Phone Number Example(+255785XXXXXX)" required><br><br>
       <input type="email" placeholder="Email" required><br><br>
        <div class="section">
-       <b style="color: red;">Gender</b><br>
-    <form required="true">
-      <label><input type="radio" name="gender" value="male"> Male</label><br>
-      <label><input type="radio" name="gender" value="female"> Female</label><br>
-      <label><input type="radio" name="gender" value="other"> Other</label>
-    </form>
+       <label>Gender:</label><br><br>
+       <label for="Male">Male</label>
+       <input type="radio" id="Male" name="Gender" value="Male" required>
+       <label for="Male">Female</label>
+       <input type="radio" id="Female" name="Gender" value="Female">
+       <label for="Male">Others</label>
+       <input type="radio" id="Others" name="Gender" value="Others">
   </div><br>
-      <input type="submit " value="Submit">
+       <button type="submit">Submit</button>
     </form>
   </div>
 </div>     
     </div>
+
+    <!-- part right -->
     <div class="bar">
         <h2>Donate Here</h2>
         <p>Help us fight HIV with hope—donate today<br>
@@ -183,14 +256,12 @@ footer{
      <div class="dropdown-content">
       <div class="payment-option" onclick="payWithAzam()">Azam Pesa</div>
   <div class="payment-option" onclick="payWithSelcom()">Selcom Pesa</div>
-
   <script>
     function payWithAzam() {
       // Replace this with actual Azam API integration
       alert("Redirecting to Azam Pesa Payment...");
       window.location.href = "https://azam.payment.api/initiate"; // example only
     }
-
     function payWithSelcom() {
       // Replace this with actual Selcom API integration
       alert("Redirecting to Selcom Pesa Payment...");
@@ -202,6 +273,8 @@ footer{
     </div>
     </div>
     <hr><br><br><br><br><br><br><br>
+
+    <!-- footer -->
     <footer>
         &copy; 2025 Red Ribbon Initiative. All rights reserved.
     </footer>

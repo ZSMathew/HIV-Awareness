@@ -2,11 +2,18 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Community</title>
     <style>
         * {
-            text-align: center;
             font-family: Sans-Serif;
+        }
+        
+        body {
+            background-image: url(images/commback.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         
         .header {
@@ -15,29 +22,47 @@
             align-items: center;
             background-color: #e63946;
             color: white;
-            padding: 15px 30px;
+            padding: 1px 5px;
         }
         
         .logo {
             font-weight: bold;
             font-size: 1.2em;
             padding-left: 40px;
+            display: flex;
+            height: 70px;
+            width: 60px;
+        }
+        
+        nav {
+            width: 100%;
         }
         
         .nav a {
             color: white;
-            margin-left: 20px;
+            margin: 0px 0px 0px 120px;
             text-decoration: none;
-            padding: 30px;
+            padding: 2px 10px;
+        }
+        
+        a:hover {
+            color: black;
+            background-color: white;
+            border-radius: 1rem;
+        }
+        
+        a:active {
+            color: red;
         }
         
         footer {
-            background-color: #e63946;
+            background-color: #ec2c3c;
             text-align: center;
-            padding: 1rem;
-            font-size: 0.9rem;
+            padding: 2px 1px;
+            font-size: 17px;
             color: #444;
             border-top: 1px solid #eee;
+            margin-top: 50px;
         }
         
         .Live {
@@ -52,10 +77,10 @@
             border-radius: 50%;
         }
         
-        .comm {
+        .comm1 {
             border-radius: 8px;
-            padding: 25px;
-            margin: 20px 0;
+            padding: 20px 0px 10px 0px;
+            margin: 0px 50px 0px 0px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
             display: flex;
             text-align: left;
@@ -64,7 +89,30 @@
             background-color: #f8f9fa;
         }
         
-
+        .comm2 {
+            border-radius: 8px;
+            padding: 20px 0px 10px 0px;
+            margin: 0px 0px 0px 0px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+            display: flex;
+            text-align: left;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #f8f9fa;
+        }
+        
+        .comm3 {
+            border-radius: 8px;
+            padding: 20px 0px 10px 0px;
+            margin: 0px 0px 0px 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+            display: flex;
+            text-align: start;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #f8f9fa;
+        }
+        
         section {
             text-align: center;
             max-width: 800px;
@@ -76,64 +124,71 @@
             color: red;
             margin-top: 0;
             text-align: left;
+            display: block;
         }
-         
-        
-        
         
         p {
             line-height: 1.6;
             color: #444;
             text-align: left;
         }
+        
+        .boxes {
+            display: flex;
+        }
     </style>
 </head>
 
 <body>
     <header class="header">
-        <div class="logo">🎗 HIV Awareness</div>
-        <nav class="nav">
-            <a href="index.html">Home</a>
-            <a href="learn.html">Learn</a>
-            <a href="community.html">Community</a>
-            <a href="volenteer.html">Volunteer</a>
-            <a href="contact.html">Contact</a>
+        <div class="logo">
+            <img src="images/logo.png">HIV Awareness</div>
+        <nav class=" nav ">
+            <a href="index.html ">Home</a>
+            <a href="learn.html ">Learn</a>
+            <a href="community.html ">Community</a>
+            <a href="volenteer.html ">Volunteer</a>
+            <a href="contact.html ">Contact</a>
         </nav>
     </header>
     <section>
         <h1><u>Community</u></h1>
-        <span>Join discussions, forums and Q&A sessions with health experts here.</span>
+
 
         <br>
-        <div class="comm">
-            <div><img src="Forums & Live Chats.jpeg" alt="" class="Live"></div>
-            <div>
+        <div class="boxes ">
+            <div class="comm1 ">
+                <div><img src="Forums & Live Chats.jpeg " alt=" " class="Live "></div>
+                <div>
 
-                <h2>Forums and Live Chats</h2>
-                <p>Engage in our community forums and join live chat sessions to connect and share experiences.</p>
+                    <h2>Forums and Live Chats</h2>
+                    <p>Engage in our community forums and join live chat sessions to connect and share experiences.</p>
+                </div>
             </div>
-        </div>
-        <br>
-        <div class="comm">
-            <div><img src="Elimika Kiganjani.jpeg" alt=""></div>
-            <div>
-                <h2>Integration with Elimika Kiganjani</h2>
-                <p>Access additional resources and discussions effortlessly through Elimika Kiganjani platform.</p>
+            <br>
+            <div class="comm2 ">
+                <div><img src="Elimika Kiganjani.jpeg " alt=" "></div>
+                <div>
+                    <h2>Integration with Elimika Kiganjani</h2>
+                    <p>Access additional resources and discussions effortlessly through Elimika Kiganjani platform.</p>
+                </div>
             </div>
-        </div>
-        <br>
-        <div class="comm">
-            <div><img src="Q&A.jpeg" alt=""></div>
-            <div>
+            <br>
+            <div class="comm3 ">
+                <div><img src="Q&A.jpeg " alt=" "></div>
+                <div>
 
-                <h2>Q&A with Doctors</h2>
-                <p>Participate in regular questions and answer sessions with qualified health professionals.</p>
+                    <h2>Q&A with Doctors</h2>
+                    <p>Participate in regular questions and answer sessions with qualified health professionals.</p>
+                </div>
             </div>
         </div>
     </section>
     <footer>
-        <p style="text-align: center;">&copy; 2025 HIV Awareness Initiative. All rights reserved.</p>
+        <p style="text-align: center; ">&copy; 2025 HIV Awareness Initiative. All rights reserved.</p>
     </footer>
 </body>
+
+</html>
 
 </html>

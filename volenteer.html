@@ -46,12 +46,12 @@ nav{
     color: black;
 }
 
-/* parts */
+/* body parts */
  .parts{
    display: flex; 
 }
 
-/* both part */
+/* Donate and volunteer parts */
 .bar{
  border-radius: 8px;
  padding: 25px;
@@ -68,6 +68,8 @@ h1, h2 {
     text-align: center;
     color: red;
 }
+
+/* buttons volunteer and Donate */
 .button-link {
   display: inline-block;
   padding: 10px 20px;
@@ -76,58 +78,39 @@ h1, h2 {
   text-decoration: none;
   border-radius: 1rem;
   font-size: 16px;
-   margin-left: 140px; 
-  margin-top: 30px;
+  margin-left: 10rem; 
+  margin-top: 3rem;
 }
 .button-link:hover {
   background-color: #45a049;
 }
 
-/* part right */
+/* Donate button and hover */
  .dropdown {
-      position: relative;
-      display: inline-block; 
-      margin-bottom: 4rem;
-    }
-    .dropbtn {
-      color: white;
-      padding: 15px 20px;
-      font-size: 20px;
-      border: none;
-      cursor: pointer;
+    display: inline-block;
     }
     .dropdown-content {
       display: none;
-      position: absolute;
-      background-color: #ffffff;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-    .dropdown-content a {
-      color: #000;
-      padding: 15px 20px;
-      text-decoration: none;
-      display: block;
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px 60px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     }
     .dropdown:hover .dropdown-content {
       display: block;
     }
-
-   /* payment */
     .payment-option {
       font-size: 20px;
       margin: 20px;
       cursor: pointer;
       transition: color 0.3s;
     }
-
     .payment-option:hover {
       color: green;
       text-decoration: underline;
     }
 
-    /* part left */
+    /* Volunteer button and hover */
     .display{
     color: white;
     font-size: 16px;
@@ -151,15 +134,11 @@ h1, h2 {
       padding: 20px;
       z-index: 100;
     }
-
-      /* Show form when hovering the button */
     .display:hover .display-content {
       transform: translate(-50%, 20px) scale(1);
       opacity: 1;
       pointer-events: auto;
     }
-
-     /* Inside form */
     .display-content input {
       width: 100%;
       padding: 10px;
@@ -169,7 +148,7 @@ h1, h2 {
     }
     label{
       color: black;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
     .display-content button {
       width: 100%;
@@ -212,7 +191,7 @@ footer{
             <a href="./contact.html">Contact</a>
         </nav>
 
-        <!-- part left -->
+        <!-- Volunteer -->
     <h1>Volunteer & Donate</h1>
     <hr><br><br><br>
     <div class="parts">
@@ -221,6 +200,8 @@ footer{
     <p>Be the spark for change—volunteer with us<br>
          in HIV awareness programs to educate, uplift,<br> and
          unite communities against stigma and infection.</p>
+
+         <!-- Volunteer button -->
          <div class="display">  
     <button style="background: none; border: none; color: red; font-size: 16px; cursor: pointer;">
         <a href="#" class="button-link">&#9662; Volunteer Now</a></button>  
@@ -245,18 +226,20 @@ footer{
 </div>     
     </div>
 
-    <!-- part right -->
+    <!-- Donate -->
     <div class="bar">
         <h2>Donate Here</h2>
         <p>Help us fight HIV with hope—donate today<br>
              to support vital programs, outreach, and life-changing<br>
               education in communities that need it most.</p>
+
+      <!-- donate button -->
     <div class="dropdown">        
         <button style="background: none; border: none; color: red; font-size: 16px; cursor: pointer;">
             <a href="#" class="button-link">&#9662; Donate Now</a></button>
      <div class="dropdown-content">
-      <div class="payment-option" onclick="payWithAzam()">Azam Pesa</div>
-  <div class="payment-option" onclick="payWithSelcom()">Selcom Pesa</div>
+      <div class="payment-option" onclick="payWithAzam()"><b>Azam Pesa</b></div>
+  <div class="payment-option" onclick="payWithSelcom()"><b>Selcom Pesa</b></div>
   <script>
     function payWithAzam() {
       // Replace this with actual Azam API integration

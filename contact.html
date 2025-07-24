@@ -6,24 +6,27 @@
     <title>CONTACTS</title>
     <style>
         body{
-            background-color: rgb(234, 43, 43);
+            background-color: cornsilk;
         }  
          
         .container{
             display: flex;
              justify-content: space-between;
              align-items: center;
-             background-color: #e63946;
+             background-color: red;
              color: white;
              padding: 15px 30px;
              max-width: 100%;
-                   }
+        }
                 
-        .logo {
-             font-weight: bold;
-             font-size: 1.2em;
-             padding-left: 40px;
-                }
+         .logo {
+            font-weight: bold;
+            font-size: 1.2em;
+            padding-left: 40px;
+            display: flex;
+            height: 70px;
+            width: 60px;
+        }
 
         .nav a {
             color: white;
@@ -33,9 +36,9 @@
                 }
 
         header{
-            background-color: red;
+            background-color: cornsilk;
             text-align: center;
-            padding: 20px;
+            padding: 5px;
         }
 
         .boxes{
@@ -50,7 +53,9 @@
             padding-left: 15px;
             height: 100%;
             margin: 20px;
-            
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+            box-sizing: border-box;
+            border-radius: 8px;
         }
 
         #submit{
@@ -66,6 +71,9 @@
             margin: 20px;
             padding-right: 10px; 
             padding-bottom: 40px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+            box-sizing: border-box;
+            border-radius: 8px;
         }
        
           .location{
@@ -128,7 +136,10 @@
 </head>
 <body>
     <div class="container">
-      <div class="logo">🎗 HIV Awareness</div>
+      <div class="logo">
+            <img src="images/RRI LOGO.jpg" alt="Map of Tanzania with a red awareness ribbon overlaid on the national flag colors, two hands reaching toward each other, and the text Red Ribbon Initiative at the top and Education Prevention Better Life at the bottom. The design conveys hope and community support in an educational and preventive health context."
+            style="border-radius: 50%;">Red Ribbon Initiative
+        </div>
         <nav class="nav">
             <a href="index.html">Home</a>
             <a href="learn.html">Learn</a>

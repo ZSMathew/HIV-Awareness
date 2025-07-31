@@ -1,225 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONTACTS</title>
-    <style>
-        body{
-            background-color: cornsilk;
-        }  
-         
-        .container{
-            display: flex;
-             justify-content: space-between;
-             align-items: center;
-             background-color: red;
-             color: white;
-             padding: 15px 30px;
-             max-width: 100%;
-        }
-                
-         .logo {
-            font-weight: bold;
-            font-size: 1.2em;
-            padding-left: 40px;
-            display: flex;
-            height: 70px;
-            width: 60px;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        .nav a {
-            color: white;
-            margin-left: 20px;
-            text-decoration: none;
-            padding: 50px;
-            font-size: large;
-        }
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: cornsilk;
+      overflow-x: hidden;
+    }
 
-         a:hover {
-            color: black;
-            background-color: white;
-            border-radius: 1%;
-        }
-        
-        a:active {
-            color: red;
-        }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
 
-        header{
-            background-color: cornsilk;
-            text-align: center;
-            padding: 5px;
-        }
+    /* Top Navigation Bar */
+    .container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: red;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      z-index: 1000;
+    }
 
-        .boxes{
-               display: flex;
-               justify-content: center;
-                }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
 
-        .box1{
-            background-color: white;
-            padding-right: 70px;
-            padding-bottom: 30px;
-            padding-left: 15px;
-            height: 100%;
-            margin: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
-            box-sizing: border-box;
-            border-radius: 8px;
-        }
+    .logo img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
 
-        #submit{
-            background-color: red;
-            border-radius: 10%;
-            border: none;
-            color: white;
-        }
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-        .box2{
-            background-color: white;
-            height: 100%;
-            margin: 20px;
-            padding-right: 10px; 
-            padding-bottom: 40px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
-            box-sizing: border-box;
-            border-radius: 8px;
-        }
-       
-          .location{
-            display: flex;
-            margin-left: 15px;
-            gap: 20px;
-          } 
-    
-           .Email{
-            display: flex;
-            margin-left: 15px;
-            gap: 20px;
-           }   
+    .nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 6px 10px;
+    }
 
-           .followus{
-            display: flex;
-            margin-left: 15px;
-            gap: 20px;
-           } 
+    .nav a:hover {
+      color: red;
+      background-color: white;
+      border-radius: 5px;
+    }
 
-           .locicon img{
-               width: 60px;
-               height: 60px;
-           }
+    /* Page Header */
+    header {
+      padding: 100px 20px 20px;
+      text-align: center;
+    }
 
-           .emicon img{
-               width: 60px;
-               height: 60px;
-           }
+    header h1 {
+      color: #111;
+      font-size: 2rem;
+      margin-bottom: 5px;
+    }
 
-           .folwicon img{
-               width: 60px;
-               height: 60px;
-           }
+    header p {
+      color: #444;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
 
-           .birdicon1 img{
-               width: 60px;
-               height: 60px;
-           }
+    /* Main Content */
+    main {
+      flex: 1;
+      padding: 20px 5% 40px;
+    }
 
-           .birdicon2 img{
-               width: 60px;
-               height: 60px;
-           }
+    .card {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
 
-           .birdicons{
-            display: flex;
-            margin-left: 15px;
-            gap: 20px;
-           }   
-           
-        
-        footer{
-            background-color: red;
-            text-align: center;
-            padding: 10px;
-        }
+    .contact-form {
+      flex: 1 1 60%;
+      margin-right: 30px;
+    }
 
-    </style>
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+
+    .contact-form input[type="submit"] {
+      background-color: red;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      width: 180px;
+      text-transform: uppercase;
+    }
+
+    .info-boxes {
+      flex: 1 1 30%;
+    }
+
+    .info-box {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    .info-box h4 {
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .info-box p, .info-box a {
+      color: black;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    /* Map + Address Card Section */
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+      gap: 20px;
+    }
+
+    .map-container {
+      flex: 2 1 60%;
+      min-width: 400px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .map-container iframe {
+      flex-grow: 1;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      min-height: 100%;
+    }
+
+    .info-card {
+      flex: 0 0 360px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hq-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .info-card h3 {
+      margin-bottom: 10px;
+      color: #333;
+      font-size: 1.2rem;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
+    }
+
+    .info-card p {
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .info-card a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .info-card a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background-color: red;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: auto;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .card,
+      .contact-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .contact-form {
+        margin-right: 0;
+      }
+
+      .map-container iframe {
+        height: 300px;
+      }
+
+      .info-card {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <div class="container">
-      <div class="logo">
-            <img src="images/RRI LOGO.jpg" alt="Map of Tanzania with a red awareness ribbon overlaid on the national flag colors, two hands reaching toward each other, and the text Red Ribbon Initiative at the top and Education Prevention Better Life at the bottom. The design conveys hope and community support in an educational and preventive health context."
-            style="border-radius: 50%;">Red Ribbon Initiative
+  <!-- Fixed Navigation Bar -->
+  <div class="container">
+    <div class="logo">
+      <img src="images/RRI LOGO.jpg" alt="Red Ribbon Initiative Logo" />
+      <span>Red Ribbon Initiative</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="learn.html">Learn</a>
+      <a href="community.html">Community</a>
+      <a href="volenteer.html">Volunteer</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+
+  <!-- Page Header -->
+  <header>
+    <h1>Contact Page</h1>
+    <p>We’d love to hear from you</p>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="card">
+      <div class="contact-form">
+        <form>
+          <div style="display: flex; gap: 10px;">
+            <input type="text" placeholder="Your Name" style="flex: 1;">
+            <input type="email" placeholder="Your Email" style="flex: 1;">
+          </div>
+          <input type="text" placeholder="Subject">
+          <textarea rows="6" placeholder="Write Message"></textarea>
+          <input type="submit" value="SEND MESSAGE">
+        </form>
+      </div>
+
+      <div class="info-boxes">
+        <div class="info-box">
+          <h4>CONTACT INFO</h4>
+          <p>Regent Estate, Chwaku Street, No 70</p>
         </div>
-        <nav class="nav">
-            <a href="index.html">Home</a>
-            <a href="learn.html">Learn</a>
-            <a href="community.html">Community</a>
-            <a href="volenteer.html">Volunteer</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="info-box">
+          <h4>BUSINESS HOURS</h4>
+          <p>Monday–Sunday: 24HRS</p>
+        </div>
+        <div class="info-box">
+          <h4>EMAIL</h4>
+          <a href="mailto:info@kairukiuniversity.org">info@kairukiuniversity.org</a>
+        </div>
+      </div>
     </div>
 
-         <header>
-            <h1>Contact Us</h1>
-         </header>
-     <div class="boxes">
-           <div class="box1">
-         <h3>Contacts</h3>
-         <p>Name</p>
-         <input id="name" type="text" name="text" placeholder="Name required">
-         <br>
-         <p>Email</p>
-         <input id="email"  type="email" name="email" placeholder="Email required">
-         <br>
-         <p>Message</p>
-        <textarea id="message" name="message" rows="5" required></textarea>
-         <br><br>
-         <input id="submit" type="submit" value="Send">
+    <div class="contact-container">
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.921894981689!2d39.28777241531687!3d-6.814283295066197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4cfe9e3fbcfb%3A0xf1171ea30ccdc2e4!2sRegistration%2C%20Insolvency%20and%20Trusteeship%20Agency%20(RITA)!5e0!3m2!1sen!2stz!4v1689594202641!5m2!1sen!2stz"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
-       
-      <div class="box2">
-         <h3 style="text-align: center;">Contacts Information</h3>
-          <div class="location">
-              <div class="locicon">
-                <img src="./images/location icon.png" alt="location icon">
-              </div>
-                <div class="locinfo">
-                    <h5 >Location</h5>
-                    <p style="font-weight: bold;">1234 Health St,Cityville,AB 12345</p>
-                </div>
-          </div>
 
-          <div class="Email">
-              <div class="emicon">
-                <img src="./images/email icon.png" alt="email icon">
-              </div>
-                <div class="eminfo">
-                    <p style="font-weight: bold;">info@hivawareness.org</p>
-                </div>
-          </div>
+      <div class="info-card">
+        <img src="./images/kairuki1.jpg" alt="KAIRUKI HQ Building" class="hq-img">
+        <h3>HEAD QUARTERS</h3>
+        <p><strong>Physical Address:</strong><br>70 Chwaku Street, Mikocheni</p>
+        <p><strong>Postal Address:</strong><br>P.O. Box 65300, Dar es Salaam</p>
+        <p><strong>Email:</strong><br>
+          <a href="mailto:info@kairukiuniversity.org">info@kairukiuniversity.org</a>
+        </p>
+        <p><strong>Phone:</strong><br>+255 653 723 707</p>
+        <p><strong>Region:</strong><br>Dar es Salaam</p>
+      </div>
+    </div>
+  </main>
 
-          <div class="followus">
-               <div class="folwicon">
-                 <img src="./images/follow icon.jpg" alt="followus icon">
-               </div>
-                 <div class="folwinfo"><h5>Follow Us</h5></div>
-          </div>
-
-           <div class="birdicons">
-            <div class="birdicon1"><img src="./images/bird icon.jpg" alt="bird"></div>
-            <div class="birdicon2"><h5>Let Us fly Together</h5></div>
-          </div>
-     </div>
-
-     </div>
-      
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.6631473935495!2d39.257057674104864!3d-6.810764966613316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4b42144187d3%3A0xaf0dfdc4f782bbc!2sIfm!5e0!3m2!1ssw!2stz!4v1750191475719!5m2!1ssw!2stz"
-         width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-     </div>
-       <footer>
-          &copy; 2025 HIV Awareness Initiative. All rights reserved.
-       </footer>
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 HIV Awareness Initiative. All rights reserved.
+  </footer>
 </body>
 </html>

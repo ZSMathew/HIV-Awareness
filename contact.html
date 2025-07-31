@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Page</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
   <style>
     * {
       margin: 0;
@@ -23,7 +27,6 @@
       flex-direction: column;
     }
 
-    /* Top Navigation Bar */
     .container {
       position: fixed;
       top: 0;
@@ -71,7 +74,6 @@
       border-radius: 5px;
     }
 
-    /* Page Header */
     header {
       padding: 100px 20px 20px;
       text-align: center;
@@ -89,7 +91,6 @@
       letter-spacing: 1px;
     }
 
-    /* Main Content */
     main {
       flex: 1;
       padding: 20px 5% 40px;
@@ -149,7 +150,6 @@
       text-decoration: none;
     }
 
-    /* Map + Address Card Section */
     .contact-container {
       display: flex;
       flex-wrap: wrap;
@@ -214,16 +214,37 @@
       text-decoration: underline;
     }
 
-    /* Footer */
     footer {
       background-color: red;
       color: white;
-      text-align: center;
-      padding: 10px;
-      margin-top: auto;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
     }
 
-    /* Responsive Design */
+    .footer-text {
+      font-size: 14px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      transition: opacity 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      opacity: 0.7;
+    }
+
     @media (max-width: 768px) {
       .card,
       .contact-container {
@@ -242,12 +263,22 @@
       .info-card {
         width: 100%;
       }
+
+      footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .social-icons {
+        justify-content: flex-start;
+      }
     }
   </style>
 </head>
 
 <body>
-  <!-- Fixed Navigation Bar -->
+  <!-- Navigation -->
   <div class="container">
     <div class="logo">
       <img src="images/RRI LOGO.jpg" alt="Red Ribbon Initiative Logo" />
@@ -264,7 +295,7 @@
 
   <!-- Page Header -->
   <header>
-    <h1>Contact Page</h1>
+    <h1>Contact</h1>
     <p>We’d love to hear from you</p>
   </header>
 
@@ -286,7 +317,7 @@
       <div class="info-boxes">
         <div class="info-box">
           <h4>CONTACT INFO</h4>
-          <p>Regent Estate, Chwaku Street, No 70</p>
+          <p>Sokoine Road Moshi, Tanzania</p>
         </div>
         <div class="info-box">
           <h4>BUSINESS HOURS</h4>
@@ -294,7 +325,7 @@
         </div>
         <div class="info-box">
           <h4>EMAIL</h4>
-          <a href="mailto:info@kairukiuniversity.org">info@kairukiuniversity.org</a>
+          <a href="https://kcmuco.ac.tz">amomachokcmc@gmail.com</a>
         </div>
       </div>
     </div>
@@ -302,29 +333,40 @@
     <div class="contact-container">
       <div class="map-container">
         <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.921894981689!2d39.28777241531687!3d-6.814283295066197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4cfe9e3fbcfb%3A0xf1171ea30ccdc2e4!2sRegistration%2C%20Insolvency%20and%20Trusteeship%20Agency%20(RITA)!5e0!3m2!1sen!2stz!4v1689594202641!5m2!1sen!2stz"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.1222530899176!2d37.32483637406178!3d-3.3199514412288926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1839d8e81f3af261%3A0xd1b80742fff40736!2sKilimanjaro%20Christian%20Medical%20Centre!5e0!3m2!1sen!2stz!4v1753951147334!5m2!1sen!2stz" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+
       </div>
 
       <div class="info-card">
-        <img src="./images/kairuki1.jpg" alt="KAIRUKI HQ Building" class="hq-img">
+        <img src="./images/university.jpeg" alt="KAIRUKI HQ Building" class="hq-img">
         <h3>HEAD QUARTERS</h3>
-        <p><strong>Physical Address:</strong><br>70 Chwaku Street, Mikocheni</p>
-        <p><strong>Postal Address:</strong><br>P.O. Box 65300, Dar es Salaam</p>
+        <p><strong>Physical Address:</strong><br>Sokoine Road Moshi, Tanzania</p>
+        <p><strong>Postal Address:</strong><br>P.O. Box 3010, Moshi</p>
         <p><strong>Email:</strong><br>
-          <a href="mailto:info@kairukiuniversity.org">info@kairukiuniversity.org</a>
+          <a href="https://kcmuco.ac.tz">amomachokcmc@gmail.com</a>
         </p>
-        <p><strong>Phone:</strong><br>+255 653 723 707</p>
-        <p><strong>Region:</strong><br>Dar es Salaam</p>
+        <p><strong>Phone:</strong><br>+255 272 754 377</p>
+        <p><strong>Region:</strong><br>Moshi</p>
       </div>
     </div>
   </main>
 
   <!-- Footer -->
   <footer>
-    &copy; 2025 HIV Awareness Initiative. All rights reserved.
+    <div class="footer-text">
+      &copy; 2025 HIV Awareness Initiative. All rights reserved.
+    </div>
+    <div class="social-icons">
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
   </footer>
 </body>
 </html>

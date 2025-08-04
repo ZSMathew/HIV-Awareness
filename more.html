@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      background-color: cornsilk;
+      overflow-x: hidden;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+     .container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: red;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      z-index: 1000;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    .logo img {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 6px 10px;
+    }
+
+    .nav a:hover {
+      color: red;
+      background-color: white;
+      border-radius: 5px;
+    }
+     footer {
+            background-color: red;
+            text-align: center;
+            width: 100%;
+           width: 100%;
+          margin top: 300px;
+        }
+</style>
+</head>
+<body>
+     <div class="container">
+    <div class="logo">
+      <img src="images/RRI LOGO.jpg" alt="Red Ribbon Initiative Logo" />
+      <span>Red Ribbon Initiative</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="learn.html">Learn</a>
+      <a href="community.html">Community</a>
+      <a href="volenteer.html">Volunteer</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+  <div><img src="images/member.jpg">HIV can<br>be prevented</div>
+  <footer style="padding: 5px;">
+<p>&copy; 2025 HIV Awareness Initiative. All rights reserved.</p>
+    </footer>
+</body>
+</html>

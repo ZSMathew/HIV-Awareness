@@ -23,11 +23,22 @@ body {
         .logo {
             font-weight: bold;
             font-size: 1.2em;
-            padding-left: 40px;
+            /* padding-left: 20px; */
             display: flex;
             height: 70px;
-            width: 60px;
+            align-items: center;
+            /* width: 60px; */
         }
+        .logo img {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+            border-radius: 50%;
+            height: 5rem;
+            width: 5rem;
+            padding: .5rem;
+        }
+        
         
         .nav a {
             color: white;
@@ -118,7 +129,7 @@ h2 {
 
 .story img {
   width: 250px;
-  height: 250px;
+  height: 300px;
   border-radius: 50%;
 }
 

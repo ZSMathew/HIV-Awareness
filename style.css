@@ -23,11 +23,9 @@ body {
         .logo {
             font-weight: bold;
             font-size: 1.2em;
-            /* padding-left: 20px; */
             display: flex;
             height: 70px;
             align-items: center;
-            /* width: 60px; */
         }
         .logo img {
             display: flex;

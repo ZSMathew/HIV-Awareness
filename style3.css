@@ -13,8 +13,7 @@ body {
 
 /* Navbar */
 .navbar {
-    background: red;
-    /* padding: 15px 40px; */
+    background: rgb(206, 7, 7);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -100,7 +99,7 @@ body {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background: red;
+    background: rgb(206, 7, 7);
     color: white;
     text-decoration: none;
     border-radius: 6px;
@@ -133,7 +132,7 @@ body {
 .footer-bottom {
   text-align: center;
   padding: 20px;
-  background: red;
+  background:rgb(206, 7, 7);
   font-size: 0.9rem;
 }
 

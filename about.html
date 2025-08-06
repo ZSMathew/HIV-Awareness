@@ -5,139 +5,213 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <style>
-        *{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        body{
-            background-color: cornsilk;
-        }
-        .container {
+/* whole page */
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-      top: 0;
-      left: 0;
-      width: 97.5%;
-      background-color: red;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      z-index: 1000;
-    }
+/* body */
+body{
+  background-color: cornsilk;
+}
 
-    .logo {
-      display: flex;
-      align-items: center;
-      font-weight: bold;
-      font-size: 1.2em;
-    }
+/* header place */
+.container {
+  top: 0;
+  left: 0;
+  width: 97.5%;
+  background-color: red;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+}
 
-    .logo img {
-      height: 40px;
-      width: 40px;
-      border-radius: 50%;
-      margin-left: 8rem;
-    }
+/* logo place */
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
 
-    .nav {
-      display: flex;
-      flex-wrap: wrap;
-      margin-right: 8rem;
-    }
+/* logo */
+.logo img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 8rem;
+}
 
-    .nav a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      font-size: 1rem;
-      padding: 6px 10px;
-    }
+/* nav bar */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 8rem;
+}
 
-    .nav a:hover {
-      color: black;
-      background-color: white;
-      border-radius: 5px;
-    }
+/* nav space oround */
+.nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 6px 10px;
+}
 
-        h1,h2{
-            text-align: center;
-            color: red;
-          }
-        hr{
-          width: 60%;
-          align-content: center;
-          color: red;
-          text-decoration-thickness: 1rem;
-        }
-        .parts{
-            display: flex;
-            width: 95%;
-        }
-        .box1{
-            display: flex;
-            width: 99%;
-            gap: 1rem;
-        }
-        .part1{
-             width: 50%;
-             text-align: left;
-            justify-content: center;
+/* nav a hover */
+.nav a:hover {
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+}
 
-        }
-        img{
-            width: 100%;
-            height: 100%;
-        }
-        .part2{
-             border-radius: 20px;
-            box-shadow: 5px 5px 5px 5px black;
-            border-radius: 15px;
-            width: 33%;
-            background-color: white;
-            text-align: left;
-            justify-content: center;
-        }
-        p{
-         margin-left: 7rem;
-        }
-         footer {
-            background-color: black;
-            text-align: center;
-            padding: 2px 1px;
-            font-size: 17px;
-            color: white;
-            border-top: 1px solid #eee;
-            margin-top: 58px;
-        }
+/* heads */
+h1,h2{
+  text-align: center;
+  color: red;
+}
+
+/* horizontal line */
+hr{
+  width: 60%;
+  align-content: center;
+  color: red;
+  text-decoration-thickness: 1rem;
+}
+
+/* parts */
+.parts{
+  display: flex;
+  width: 95%;
+}
+
+/* boxs */
+.box1{
+  display: flex;
+  width: 99%;
+  gap: 1rem;
+}
+
+/* parts */
+.part1{
+  width: 50%;
+  text-align: left;
+  justify-content: center;
+
+}
+
+/* the image */
+img{
+  width: 100%;
+  height: 100%;
+}
+
+/* boxs */
+.part2{
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px 5px black;
+  border-radius: 15px;
+  width: 33%;
+  background-color: white;
+  text-align: left;
+  justify-content: center;
+}
+/* paragraf */
+p{
+ margin-left: 7rem;
+}
+
+/* sponsored */
+.spon {
+  width: 100%;
+  height: 120px;
+  background-color: cornsilk;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* center 80% area */
+.spon-wrapper {
+  width: 80%; 
+  overflow: hidden;
+  position: relative;
+}
+
+/* moving images track */
+.spon-track {
+  display: flex;
+  gap: 60px; 
+  animation: bounce-scroll 20s linear infinite alternate;
+}
+
+/* sponsor logos */
+.spon-track img {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* animation from right to left */
+@keyframes bounce-scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* footer */
+footer {
+  background-color: black;
+  text-align: center;
+  padding: 2px 1px;
+  font-size: 17px;
+  color: white;
+  border-top: 1px solid #eee;
+  margin-top: 58px;
+}
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-  <div class="container">
-    <div class="logo">
-      <img src="images/RRI LOGO.jpg" alt="Red Ribbon Initiative Logo" />
-      <span style="margin-left: 3rem;">Red Ribbon Initiative</span>
-    </div>
-    <nav class="nav">
+ <!-- Navigation -->
+<div class="container">
+  <div class="logo">
+    <img src="images/RRI LOGO.jpg" alt="Red Ribbon Initiative Logo" />
+    <span style="margin-left: 3rem;">Red Ribbon Initiative</span>
+  </div>
+
+<!-- nav bar -->
+  <nav class="nav">
       <a href="index.html">Home</a>
       <a href="learn.html">Learn</a>
       <a href="community.html">Community</a>
       <a href="about.html">About Us</a>
       <a href="contact.html">Contact</a>
-    </nav>
-  </div>
+  </nav>
+</div>
 
-  <!-- head -->
-     <h1><b>ABOUT US</b></h1>
+<!-- head -->
+<h1><b>ABOUT US</b></h1>
     <hr>
 
-    <!-- body -->
-   <div class="parts">
-    <div class="part1">
+<!-- body -->
+
+<!-- parts -->
+<div class="parts">
+
+<!-- the image -->
+  <div class="part1">
         <img src="./images/red ribbon group.jpg">
-    </div>
-    <div class="part1">
-        <h2>Red Ribbon Initiative Background</h2>  <hr><br>
+  </div>
+
+<!-- oru background -->
+  <div class="part1">
+    <h2>Red Ribbon Initiative Background</h2>  <hr><br>
       <p><b>The Red Ribbon Initiative</b> was established by <b>Abdi Mpongwe</b>,<br>
       a passionate medical student at<b> KCMC University</b>, after<br>
       identifying a critical gap in HIV awareness and education among<br>
@@ -146,43 +220,62 @@
       often due to misinformation or lack of access to accurate, youth-friendly<br>
       education on HIV. Driven by a vision to create change,<br>
       <b>Abdi</b> founded the Initiative as a platform to educate, empower,<br>
-       and engage students through interactive and relatable sessions.<br>
-        The goal is simple yet powerful: to bridge the knowledge gap and<br>
-         foster a safer, more informed university community.</p>
-    </div>
-   </div>
-   <br>
+      and engage students through interactive and relatable sessions.<br>
+      The goal is simple yet powerful: to bridge the knowledge gap and<br>
+      foster a safer, more informed university community.</p>
+  </div>
+</div>
+<br>
 
-   <div class="box1">
-    <div class="part2">
-        <h2>Our Mission</h2>  <hr><br>
-        <p>To empower student with knowledge,<br>
-        skills, and opportinuties to combat<br>
-        HIV/AIDS through education, community<br>
-        outtreach, peer engagement, and<br>
-        support for affected individuals.</p>
-       
-    </div>
-    <div class="part2">
-        <h2>Our Vission</h2>  <hr><br>
-        <p>To create an informed, inclusive, and <br>
-        stigma-fre campus community through <br>
-        sustained HIV/AIDS enducation, advocacy,<br>
-        and support.</p>
+<!-- boxs -->
+<div class="box1">
 
-    </div>
-    <div class="part2">
-        <h2>Our Team</h2>  <hr>
-    <br>
-    <p>
+<!-- our mission -->
+  <div class="part2">
+    <h2>Our Mission</h2>  <hr><br>
+      <p>To empower student with knowledge,<br>
+      skills, and opportinuties to combat<br>
+      HIV/AIDS through education, community<br>
+      outtreach, peer engagement, and<br>
+      support for affected individuals.</p>
+  </div>
+
+<!-- our vision -->
+  <div class="part2">
+    <h2>Our Vission</h2>  <hr><br>
+      <p>To create an informed, inclusive, and <br>
+      stigma-fre campus community through <br>
+      sustained HIV/AIDS enducation, advocacy,<br>
+      and support.</p>
+
+  </div>
+
+<!-- our team -->
+  <div class="part2">
+    <h2>Our Team</h2>  <hr>
+      <br>
+      <p>
         Our team is leaded by the core founder and C.E.O of this organization
-    </p>
-    </div>
-   </div>
+      </p>
+  </div>
+</div>
 
-   <!-- footer -->
-    <footer>
-        <p style="text-align: center;">&copy; 2025 Red Ribbon Initiative. | All rights reserved.</p>
-    </footer>
+<!-- sponsored -->
+  <h2>sponsored By</h2>
+    <hr>
+
+<!-- logos -->
+<div class="spon">
+  <div class="spon-track">
+    <img src="./images/ZIARA Logo.png" alt="ZIARA Logo">
+    <img src="./images/kcmc_logo.png" alt="KCMC Logo">
+    <img src="./images/tume_logo.png" alt="Tume Logo">
+  </div>
+</div>
+
+<!-- footer -->
+<footer>
+  <p style="text-align: center;">&copy; 2025 Red Ribbon Initiative. | All rights reserved.</p>
+</footer>
 </body>
 </html>

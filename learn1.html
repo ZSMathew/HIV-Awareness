@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIV Awareness</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f7f7f7;
+        }
+
+        header {
+            background: #33c1c5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .intro-section,
+        .protect-section {
+            padding: 30px;
+            background: #fff;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro-section p {
+            align-items: center;
+            align-content: center;
+        }
+
+        .intro-section h2,
+        .protect-section h2 {
+            color: #222;
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px;
+        }
+
+        .image-row img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #33c1c5;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .sidebar_menu {
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 250px;
+            background-color: #222;
+            color: #fff;
+            transform: translateX(-250px);
+            transition: transform 0.3s ease;
+        }
+
+        #check:checked~.sidebar_menu {
+            transform: translateX(0);
+        }
+
+        .btn_one,
+        .btn_two {
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            color: white;
+            z-index: 1000;
+        }
+
+        .btn_two {
+            left: 215px;
+        }
+
+        .sidebar_menu .logo {
+            padding: 20px;
+            background-color: #33c1c5;
+            text-align: center;
+        }
+
+        .sidebar_menu .logo a {
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .sidebar_menu .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar_menu .menu ul li {
+            padding: 15px 20px;
+        }
+
+        .sidebar_menu .menu ul li a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .sidebar_menu .menu ul li a i {
+            margin-right: 10px;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" id="check">
+    <div class="btn_one">
+        <label for="check">
+            <i class="fas fa-bars"></i>
+        </label>
+    </div>
+
+    <div class="sidebar_menu">
+        <div class="logo">
+            <a href="index3.html">RR Initiative</a>
+            <img src="images/RRI LOGO.jpg" alt="ribbon" style="width: 100px; border-radius: 50%;">
+        </div>
+        <div class="btn_two">
+            <label for="check">
+                <i class="fas fa-times"></i>
+            </label>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index3.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="learn1.html"><i class="fas fa-book-reader"></i> Learn</a></li>
+                <li><a href="community.html"><i class="fas fa-users"></i> Community</a></li>
+                <li><a href="about.html"><i class="fas fa-hands-helping"></i> About Us</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <header>
+        <h1>HIV Awareness</h1>
+    </header>
+
+    <div class="image-row">
+        <img src="images/jane.jpg" alt="person1">
+        <img src="images/Jane 2.jpg" alt="person2">
+        <img src="images/m2.jpg" alt="person3">
+        <img src="images/Michael.jpg" alt="person4">
+    </div>
+
+    <div class="intro-section">
+        <h2>Introduction</h2>
+        <span>Welcome to our HIV Awareness learning page. Here, you'll find clear, accurate information about HIV,
+            how it's transmitted, how to protect yourself and others, and what it means to live with HIV today.
+            Our goal is to empower you with knowledge, dispel myths, and foster a supportive community.
+            Understanding HIV is the first step towards prevention,
+            reducing stigma, and ensuring everyone has access to the care and support they need to live healthy
+            lives.</span>
+    </div>
+
+    <div class="protect-section">
+        <h2>What is HIV?</h2>
+        <ul>
+            <li>HIV stands for Human Immunodeficiency Virus. It's a virus that attacks the body's immune system.</li>
+            <li>The immune system helps the body fight off infections and diseases. HIV targets and destroys CD4 cells
+                (T-cells), a type of white blood cell that plays a crucial role in immune function.</li>
+            <li>Over time, if HIV is not treated, the damage to the immune system can lead to Acquired Immunodeficiency
+                Syndrome (AIDS). AIDS is a set of symptoms and illnesses that occur at the late stage of HIV infection
+                when the immune system is severely damaged.</li>
+            <li>Important: With early diagnosis and consistent treatment, people with HIV can prevent the progression to
+                AIDS and live long, healthy lives.</li>
+        </ul>
+        <ul>
+            <h2>How is HIV Transmitted?</h2>
+            <span> HIV can be transmitted through specific bodily fluids from an infected person that come into contact
+                with a mucous membrane (such as inside the rectum, vagina, penis, or mouth), damaged tissue, or are
+                directly injected into the bloodstream. These fluids include:</span>
+                <li>Blood</li>
+                <li> Semen and pre-seminal fluid</li>
+                <li>Rectal fluids</li>
+                <li>Vaginal fluids</li>
+                <li>Breast milk</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 HIV Awareness Initiative. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

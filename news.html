@@ -93,7 +93,61 @@ hr{
     background-color: white;
     border: 0.1rem solid green;
     border-radius: 1rem;
+    display: flex;
 }
+
+/* Icon box */
+    .icon {
+      background:white;
+      border-radius:10px;
+      padding:10px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow: 0 4px 10px rgba(2,6,23,0.04);
+      cursor:default;
+      position:relative;
+    }
+
+    .icon.blink::after{
+      /* small red blinking dot top-right */
+      content:"";
+      position:absolute;
+      top:0px;
+      right:20px;
+      width:20px;
+      height:20px;
+      border-radius:50%;
+     background-color: red;
+      box-shadow:0 0 8px red;
+      animation: ping 0.5s infinite;
+    }
+
+        @keyframes ping {
+      0% { transform: scale(0.9); opacity:1; }
+      70% { transform: scale(1.8); opacity:0; }
+      100% { transform: scale(1.8); opacity:0; }
+    }
+
+.pn-title{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      width:100%;
+      margin-bottom: 14rem;
+    }
+
+     .pn-logo {
+      width:70px;
+      height:70px;
+      border-radius:12px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:var(--glass);
+      flex-shrink:0;
+      color: green;
+    }
 
 /* images */
 img{
@@ -101,17 +155,6 @@ img{
     height: 15rem;
     border: 0.4rem solid red;
     border-radius: 1rem;
-}
-
-img :hover{
-    padding-top: 10%;
-}
-
-/* location of images */
-.bh{
-    width: 15rem;
-    height: 15rem;
-    position-area: right 6rem bottom 6rem;
 }
 
 
@@ -157,15 +200,49 @@ footer {
 <!-- boxs -->
  <div class="boxs">
     <div class="box">
-        <div class="bh">
             <img src="./images/participation.jpg">
+<div class="pn-title">
+        <div class="pn-logo" aria-hidden="true">
+          <!-- simple megaphone svg -->
+          <svg class="svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M3 11v2a1 1 0 0 0 1 1h1l6 3V7L5 10H4a1 1 0 0 0-1 1z" fill="currentColor"/>
+          </svg>
+
+          <div class="icon blink" title="New announcement">
+          <!-- megaphone -->
+          <svg class="svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 11v2a1 1 0 0 0 1 1h1l6 3V7L5 10H4a1 1 0 0 0-1 1z" fill="currentColor"/>
+          </svg>
         </div>
+        </div>
+        <div>
+          <h2>Know more about the Comming Events</h2>
+          <div class="pn-sub">................................</div>
+        </div>
+      </div>
     </div>
     <br><br>
     <div class="box">
-        <div class="bh">
             <img src="./images/member1.png">
+<div class="pn-title">
+        <div class="pn-logo" aria-hidden="true">
+          <!-- simple megaphone svg -->
+          <svg class="svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M3 11v2a1 1 0 0 0 1 1h1l6 3V7L5 10H4a1 1 0 0 0-1 1z" fill="currentColor"/>
+          </svg>
+
+          <div class="icon blink" title="New announcement">
+          <!-- megaphone -->
+          <svg class="svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 11v2a1 1 0 0 0 1 1h1l6 3V7L5 10H4a1 1 0 0 0-1 1z" fill="currentColor"/>
+          </svg>
         </div>
+        </div>
+        <div>
+          <h2>Know more about the Comming Events</h2>
+          <div class="pn-sub">................................</div>
+        </div>
+      </div>
     </div>
  </div>
 

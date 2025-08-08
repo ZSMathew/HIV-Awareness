@@ -109,17 +109,31 @@ hr{
 img{
   width: 100%;
   height: 100%;
+  transition: transform 0.4s ease;
+  border-radius: 2rem;
+
 }
+
+/* image hover */
+img:hover {
+  transform: scale(1.1); /* Zoom effect */
+}
+
 
 /* boxs */
 .part2{
   border-radius: 20px;
   box-shadow: 5px 5px 5px 5px black;
   border-radius: 15px;
-  width: 33%;
+  width: 32%;
   background-color: white;
   text-align: left;
   justify-content: center;
+}
+
+
+.part2:hover {
+  transform: scale(1.1); /* Zoom effect */
 }
 /* paragraf */
 p{
@@ -130,7 +144,7 @@ p{
 .spon {
   width: 100%;
   height: 120px;
-  background-color: cornsilk;
+  background-color: #f7f7f7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -255,7 +269,7 @@ footer {
     <h2>Our Mission</h2>  <hr><br>
       <p>To empower student with knowledge,<br>
       skills, and opportinuties to combat<br>
-      HIV/AIDS through education, community<br>
+      <b>HIV/AIDS</b> through education, community<br>
       outtreach, peer engagement, and<br>
       support for affected individuals.</p>
   </div>
@@ -265,7 +279,7 @@ footer {
     <h2>Our Vission</h2>  <hr><br>
       <p>To create an informed, inclusive, and <br>
       stigma-fre campus community through <br>
-      sustained HIV/AIDS enducation, advocacy,<br>
+      sustained <b>HIV/AIDS</b> enducation, advocacy,<br>
       and support.</p>
 
   </div>
@@ -274,8 +288,9 @@ footer {
   <div class="part2">
     <h2>Our Team</h2>  <hr>
 <br>
-    <p>
-  <b>Executive Board</b>  <br> 
+
+<div id="notice-content" style="margin-top:1rem; color:black;">
+  <p>  <b>Executive Board</b>  <br> 
 The President & Founder – <b style="color: blue;">Abdi Issa Mpongwe</b>
 
 Vice President – <b style="color: blue;">Vashti Isacka Kihomwe</b><br><br>
@@ -285,13 +300,96 @@ Vice President – <b style="color: blue;">Vashti Isacka Kihomwe</b><br><br>
  The General secretary  – <b style="color: blue;">Angel Joseph Banzi</b>
 
 Deputy general secretary– <b style="color: blue;">Omar Shukuru Rumanga
-</b>
-
+</b></p>
+</div>
 
 <div class="ticker-controls">
   <button class="prev" aria-label="Previous Notice">&#10094;</button>
-  <button class="12.html" aria-label="Next Notice">&#10095;</button>
+  <button class="next" aria-label="Next Notice">&#10095;</button>
 </div>
+
+<script>
+  // Maudhui ya kila "page"
+  const pages = [
+    `<p>  <b>Executive Board</b>  <br> 
+The President & Founder – <b style="color: blue;">Abdi Issa Mpongwe</b>
+
+Vice President – <b style="color: blue;">Vashti Isacka Kihomwe</b><br><br>
+
+<b>Secretariat</b><br>
+
+ The General secretary  – <b style="color: blue;">Angel Joseph Banzi</b>
+
+Deputy general secretary– <b style="color: blue;">Omar Shukuru Rumanga
+</b></p>`,
+  `<p><b>Finance & Operations</b><br>
+
+Chief Financial Officer – <b style="color: blue;">Joyce Petro Anderson</b>
+
+Deputy Finance Officer – <b style="color: blue;">Nuni Suleimani Ndunguru</b><br>
+
+Logistics & Procurement Officer – <b style="color: blue;">Mpeli Thomas</b><br><br>
+
+<b>Communications & Public Relations</b><br>
+
+Head of Media & Publicity – <b style="color: blue;">Kelvin Honoratus Ngakuka</b><br>
+
+Media Officers – <b style="color: blue;">Hassan Yazid, Heriet Stephano</b><br>
+
+Social Media Manager – <b style="color: blue;">Sara Victor</b><br>
+
+Graphics & Branding Officer – <b style="color: blue;">Gervas Japhet</b>
+
+</p>`,
+  `<p><b>Programs & Events</b><br>
+
+Programs Director – <b style="color: blue;">Simon Ernest</b><br>
+
+Deputy Programs Director – <b style="color: blue;">Doreen Kessy</b><br>
+
+Events Manager – <b style="color: blue;">Ester Jonas Shirima</b><br> 
+
+Monitoring & Evaluation Officer – <b style="color: blue;">Eric Mahatara</b><br><br>
+
+<b>Membership & Human Capital</b><br>
+
+Membership & Welfare Director – <b style="color: blue;">Elvira Mahirane</b><br>
+
+Deputies – <b style="color: blue;">Ester Jonas Shirima, Glory Alfonce Mushi</b><br>
+
+Volunteer Coordinator-</p>`
+  ,
+`<p><b>Projects & Partnerships</b><br>
+
+Project Director – <b style="color: blue;">Gabriel Ssebuyoya</b><br>
+
+Grants & Fundraising Officer – <br>
+
+Partnerships & Stakeholder Relations Officer –<br>
+
+Club advisor: <b style="color: blue;">Dr. Edwin Shewiyo</b><br>
+HIV & SRH technical advisor: <b style="color: blue;">Dr. George Mfanando</b></p>`
+  ];
+
+  let currentPage = 0; // inaanza ukurasa wa kwanza
+
+  // Badilisha content
+  function showPage(index) {
+    document.getElementById("notice-content").innerHTML = pages[index];
+  }
+
+  // Button Previous
+  document.querySelector(".prev").addEventListener("click", () => {
+    currentPage = (currentPage - 1 + pages.length) % pages.length;
+    showPage(currentPage);
+  });
+
+  // Button Next
+  document.querySelector(".next").addEventListener("click", () => {
+    currentPage = (currentPage + 1) % pages.length;
+    showPage(currentPage);
+  });
+</script>
 
     </p>
   </div>

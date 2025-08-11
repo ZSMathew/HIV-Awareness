@@ -7,6 +7,16 @@
   <title>Home</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
+
+  <style>
+            /* Custom styles for the mobile menu */
+        .mobile-menu-open {
+            transform: translateX(0);
+        }
+        .mobile-menu-closed {
+            transform: translateX(100%);
+        }
+  </style>
 </head>
 
 <body>
@@ -43,6 +53,26 @@
       <p>&copy; 2025 Red Ribbon Initiative. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- JavaScript for Mobile Menu -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const closeMenuButton = document.getElementById('close-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        function openMenu() {
+            mobileMenu.classList.remove('mobile-menu-closed');
+            mobileMenu.classList.add('mobile-menu-open');
+        }
+
+        function closeMenu() {
+            mobileMenu.classList.remove('mobile-menu-open');
+            mobileMenu.classList.add('mobile-menu-closed');
+        }
+
+        mobileMenuButton.addEventListener('click', openMenu);
+        closeMenuButton.addEventListener('click', closeMenu);
+    </script>
 
 </body>
 

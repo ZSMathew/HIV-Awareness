@@ -2,226 +2,221 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Red Ribbon Initiative</title>
-  <style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red Ribbon Initiative</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2h6J6fL+4B6P8A5g4gJ5S7aM4XpT9eT+n0f78W+5Qx9b+7qV4U4F4M2Z" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    /* Reset and Base Styles */
     * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
 
     html,
     body {
-      height: 100%;
-      font-family: Arial, sans-serif;
-      background-color: cornsilk;
-      overflow-x: hidden;
+        height: 100%;
+        font-family: Arial, sans-serif;
+        background-color: cornsilk;
+        overflow-x: hidden;
     }
 
     body {
-      display: flex;
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
 
     /* Header */
     .container {
-      width: 100%;
-      background-color: red;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+        width: 100%;
+        background-color: red;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
     }
 
     .logo {
-      display: flex;
-      align-items: center;
-      font-weight: bold;
-      font-size: 1.2em;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 1.2em;
     }
 
     .logo img {
-      height: 40px;
-      width: 40px;
-      border-radius: 50%;
-      margin-right: 10px;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
     }
 
     .nav {
-      display: flex;
-      flex-wrap: wrap;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .nav a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      font-size: 1rem;
-      padding: 6px 10px;
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
+        font-size: 1rem;
+        padding: 6px 10px;
+        transition: color 0.3s, background-color 0.3s;
     }
 
     .nav a:hover {
-      color: red;
-      background-color: white;
-      border-radius: 5px;
+        color: red;
+        background-color: white;
+        border-radius: 5px;
     }
 
-    /* Layout */
-    .working {
-      padding: 20px;
+    /* Layout & Content */
+    .protect-section {
+        padding: 30px;
+        background: #fff;
+        margin: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        line-height: 1.6;
     }
 
-    .together {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
+    .protect-section h2 {
+        text-decoration: underline;
+        margin-bottom: 15px;
+        color: red;
     }
 
-    .member {
-      width: 50%;
+    .protect-section p {
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 200;
+        line-height: 1.6;
+        margin-bottom: 10px;
     }
 
-    .member img {
-      width: 100%;
+    .protect-section span {
+        display: block; /* Ensures the span is on its own line */
+        margin-bottom: 15px;
     }
 
-    /* Sidebar toggle menu */
-    .menu-icon {
-      font-size: 2rem;
-      cursor: pointer;
-      color: red;
-      padding: 10px;
-      display: block;
+    ul {
+        list-style: disc; /* Use a consistent bullet point style */
+        margin-left: 25px; /* Indent the list items */
+        margin-bottom: 15px; /* Add space after each list */
     }
 
-    .menu {
-      display: none;
-      flex-direction: column;
-      background-color: red;
-      margin-top: 10px;
+    li {
+        margin-bottom: 10px; /* Space between list items */
     }
 
-    .menu a {
-      padding: 12px;
-      color: white;
-      text-decoration: none;
-      border-top: 1px solid #fff;
-    }
-
-    .menu a:hover {
-      background-color: #666;
-    }
-
-    #menu-toggle:checked+.menu-icon+.menu {
-      display: flex;
-    }
-
-    /* Responsive iframe */
-    iframe {
-      width: 100%;
-      height: 300px;
-      margin-bottom: 15px;
-      border: none;
-    }
-
-    /* Typography */
-    h1 {
-      text-decoration: underline;
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    p {
-      font-size: large;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: 200;
-      line-height: 1.6;
-      margin: 10px 0;
+    .protect-section a {
+        color: red;
+        text-decoration: underline;
     }
 
     /* Footer */
     footer {
-      background-color: red;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      margin-top: 30px;
+        background-color: red;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: auto; /* Pushes the footer to the bottom */
     }
 
-    .protect-section {
-      padding: 30px;
-      background: #fff;
-      margin: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Responsive Design for smaller screens */
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column; /* Stacks logo and nav on smaller screens */
+            align-items: flex-start;
+        }
+
+        .nav {
+            display: none; /* Hide the full nav by default on small screens */
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .nav.active {
+            display: flex; /* Show the nav when the 'active' class is added */
+        }
+
+        .nav a {
+            width: 100%;
+            margin: 0;
+            padding: 12px 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .logo {
+            width: 100%;
+            justify-content: space-between;
+        }
     }
-  </style>
+    </style>
 </head>
 
 <body>
 
-  <!-- Header -->
-  <div class="container">
-    <div class="logo">
-      <img src="images/RRI LOGO.jpg" alt="Red Ribbon Initiative Logo" />
-      <span>Red Ribbon Initiative</span>
+    <div class="container">
+        <div class="logo">
+            <img src="images/RRI LOGO.jpg" alt="Red Ribbon Initiative Logo" />
+            <span>Red Ribbon Initiative</span>
+            <i class="fa-solid fa-bars menu-icon"></i>
+        </div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="learn.html">Learn</a>
+            <a href="community.html">Community</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </div>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="learn.html">Learn</a>
-      <a href="community.html">Community</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
 
-  <div class="protect-section">
-    <h2>Prevention and Protection</h2>
-    <span>Knowing how HIV is transmitted is key to preventing its spread.
-      Effective prevention methods include:</span>
-    <ul>
-      <li> Using Condoms: Consistent and correct use of condoms (both male and female) during sexual activity
-        significantly reduces the risk of HIV transmission.</li> <br>
-      <li> Pre-exposure Prophylaxis (PrEP): PrEP is a daily medication taken by HIV-negative individuals to reduce their
-        risk of HIV infection. It is highly effective when taken as prescribed.</li> <br>
-      <li> Post-exposure Prophylaxis (PEP): PEP is a course of medication that can be taken after a potential exposure
-        to HIV to prevent infection. It must be started within 72 hours of exposure.</li> <br>
-      <li> Testing and Treatment: Knowing your HIV status and, if positive, starting antiretroviral therapy (ART) is
-        crucial. ART not only keeps the person with HIV healthy but also significantly reduces the risk of transmitting
-        the virus to others.</li> <br>
-      <li> Undetectable = Untransmittable (U=U): People living with HIV who take their medication as prescribed and
-        achieve and maintain an undetectable viral load cannot sexually transmit HIV.</li> <br>
-    </ul>
-    <h2>Treatment and Living with HIV</h2>
-    <ul>
-      <li>Antiretroviral Therapy (ART): ART involves taking a combination of medications that slow down the progression
-        of HIV in the body. It helps people with HIV live longer, healthier lives and prevents the transmission of the
-        virus.</li> <br>
-      <li>Regular Medical Care: People living with HIV need regular check-ups with healthcare providers to monitor their
-        health and adjust treatment as needed.</li> <br>
-      <li> Support Systems: Connecting with support groups, friends, and family can provide emotional and practical
-        support for people living with HIV.</li> <br>
-      <li> Living a Full Life: With effective treatment and support, people with HIV can work, have relationships, raise
-        families, and enjoy a full and active life.</li> <br>
-    </ul>
+    <div class="protect-section">
+        <h2>Prevention and Protection</h2>
+        <span>Knowing how HIV is transmitted is key to preventing its spread. Effective prevention methods include:</span>
+        <ul>
+            <li>Using Condoms: Consistent and correct use of condoms (both male and female) during sexual activity significantly reduces the risk of HIV transmission.</li>
+            <li>Pre-exposure Prophylaxis (PrEP): PrEP is a daily medication taken by HIV-negative individuals to reduce their risk of HIV infection. It is highly effective when taken as prescribed.</li>
+            <li>Post-exposure Prophylaxis (PEP): PEP is a course of medication that can be taken after a potential exposure to HIV to prevent infection. It must be started within 72 hours of exposure.</li>
+            <li>Testing and Treatment: Knowing your HIV status and, if positive, starting antiretroviral therapy (ART) is crucial. ART not only keeps the person with HIV healthy but also significantly reduces the risk of transmitting the virus to others.</li>
+            <li>Undetectable = Untransmittable (U=U): People living with HIV who take their medication as prescribed and achieve and maintain an undetectable viral load cannot sexually transmit HIV.</li>
+        </ul>
 
-    <h2>Resources and Further Information</h2>
-    <ul>
-      <li><a href="https://www.who.int/health-topics/hiv-aids#tab=tab_1">World Health Organization (WHO)</a> </li> <br>
-      <li><a href="https://www.unaids.org/en">UNAIDS</a></li> <br>
-    </ul>
-  </div>
+        <h2>Treatment and Living with HIV</h2>
+        <ul>
+            <li>Antiretroviral Therapy (ART): ART involves taking a combination of medications that slow down the progression of HIV in the body. It helps people with HIV live longer, healthier lives and prevents the transmission of the virus.</li>
+            <li>Regular Medical Care: People living with HIV need regular check-ups with healthcare providers to monitor their health and adjust treatment as needed.</li>
+            <li>Support Systems: Connecting with support groups, friends, and family can provide emotional and practical support for people living with HIV.</li>
+            <li>Living a Full Life: With effective treatment and support, people with HIV can work, have relationships, raise families, and enjoy a full and active life.</li>
+        </ul>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 HIV Awareness Initiative. All rights reserved.</p>
-  </footer>
+        <h2>Resources and Further Information</h2>
+        <ul>
+            <li><a href="https://www.who.int/health-topics/hiv-aids#tab=tab_1" target="_blank">World Health Organization (WHO)</a> </li>
+            <li><a href="https://www.unaids.org/en" target="_blank">UNAIDS</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 HIV Awareness Initiative. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuIcon = document.querySelector('.menu-icon');
+            const navMenu = document.querySelector('.nav');
+
+            menuIcon.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+        });
+    </script>
 
 </body>
 

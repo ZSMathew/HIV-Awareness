@@ -2,122 +2,47 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HIV Awareness</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-    <header class="header">
-        <div class="logo">
-            <img src="images/RRI LOGO.jpg" alt="Map of Tanzania with a red awareness ribbon overlaid on the national flag colors, 
-            two hands reaching toward each other, and the text Red Ribbon Initiative at the top and Education Prevention Better Life at the bottom. 
-            The design conveys hope and community support in an educational and preventive health context.">Red
-            Ribbon Initiative
-        </div>
-        <nav class=" nav ">
-            <a href="index.html ">Home</a>
-            <a href="learn.html ">Learn</a>
-            <a href="community.html ">Community</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html ">Contact</a>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Empowering Communities,<br>Ending HIV</h1>
-            <p>We are committed to raising awareness and providing support for HIV prevention and treatment.</p>
-            <a href="join.html" class="btn">Join Us</a>
-        </div>
-    </section>
-
-    <section class="about">
-        <h2>About Us</h2>
-        <p>Our mission is to educate and support individuals affected by HIV through inclusive,
-            <br>research-based information and awareness.</p>
-            <p>
-        we are a dedicated team focused on raising awareness and providing support to individual affected by HIV/AIDS.<br>
-        Our goal is to educate, inform and empower communities through accurate <br>information, real-life stories, and
-        access to useful resources.
-        </p>
-        <p> Together, we can strive to break the stigma, promote testing, encourage preventon, and ensure that no one
-            faces HIV alone.</p>
-    </section>
-
-    <section id="impact-stories">
-  <h2>Impact Stories</h2>
-  
-  <div class="stories-container">
-    <div class="story">
-      <img src="images/Jane.jpg" alt="Jane D.">
-      <p>"The Resources and support I found here have changed my life."</p>
-      <strong>Jane D.</strong>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/RRI LOGO.jpg" alt="">Red Ribbon Initiative
     </div>
-    <div class="story">
-      <img src="images/m2.jpg" alt="Michael S.">
-      <p>"This Initiative gave me hope and the tools to live positively."</p>
-      <strong>Michael S.</strong>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="learn.html ">Learn</a></li>
+      <li><a href="community.html ">Community</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html ">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1><span>Empowering</span><br>Communities,<br>Ending HIV</h1>
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nonummy nibh euismod tincidunt ut laoreet dolore.</p> -->
+      <a href="about.html" class="btn">READ MORE</a>
     </div>
-    <div class="story">
-      <img src="images/Jane 2.jpg" alt="Jane D.">
-      <p>"The Resources and support I found here have changed my life."</p>
-      <strong>Jane D.</strong>
+    <div class="hero-image">
+      <img src="StockCake-Joyful Celebratory Moment_1750183318.jpg" alt="Illustration" />
     </div>
-    <div class="story">
-      <img src="images/Michael 2.jpg" alt="Michael S.">
-      <p>"This Initiative gave me hope and the tools to live positively."</p>
-      <strong>Michael S.</strong>
+  </section>
+
+  <footer class="footer">
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Red Ribbon Initiative. All rights reserved.</p>
     </div>
-  </div>
-
-  <div class="pagination">
-    <button onclick="prevPage()">Prev</button>
-    <span id="page-num">Page 1</span>
-    <button onclick="nextPage()">Next</button>
-  </div>
-</section>
-<!-- Link to JS -->
-<script src="pagination.js"></script>
-
-
-
-<!-- footer -->
-<footer style="background-color: #e63946; padding: 30px 20px; color: white;">
-  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
-    
-    <!-- Social Media Section -->
-    <div style="flex: 1; min-width: 200px; margin-bottom: 20px;">
-      <h4>Follow Us</h4>
-      <a href="#" style="margin-right: 10px;"><img src="icons8-facebook-logo-48.png" alt="Facebook" width="24"></a>
-      <a href="#"><img src="icons8-twitter-48.png" alt="Twitter/X" width="24"></a>
-      <a href="#" style="margin-left: 10px;"><img src="icons8-instagram-logo-48.png" alt="Instagram" width="24"></a>
-    </div>
-
-    <!-- Newsletter -->
-    <div style="flex: 1; min-width: 250px; margin-bottom: 20px;">
-      <h4>Subscribe to our Newsletter</h4>
-      <form>
-        <input type="email" placeholder="Enter your email" style="padding: 8px; width: 70%; border: none;">
-        <button type="submit" style="padding: 8px 12px; background: white; color: #d13b7b; border: none; cursor: pointer;">Subscribe</button>
-      </form>
-    </div>
-
-    <!-- Quick Links (Optional) -->
-    <div style="flex: 1; min-width: 200px;">
-      <h4>Quick Links</h4>
-      <ul style="list-style: none; padding: 0;">
-        <li><a href="about.html" style="color: white; text-decoration: none;">About Us</a></li>
-        <li><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></li>
-        <li><a href="volenteer.html" style="color: white; text-decoration: none;">Volunteer</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div style="text-align: center; margin-top: 30px;">
-    <p>&copy; 2025 HIV Awareness Initiative. All rights reserved. </p>
+  </footer>
 
 </body>
 

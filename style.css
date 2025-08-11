@@ -1,180 +1,152 @@
+/* Reset & Base */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-  line-height: 1.6;
+    background: #4ad48f;
+    color: #333;
 }
 
+/* Navbar */
+.navbar {
+    background: rgb(206, 7, 7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
 
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: red;
-            color: white;
-            padding: 15px 30px;
-            max-width: 100%;
-        }
-        
-        .logo {
-            font-weight: bold;
-            font-size: 1.2em;
-            display: flex;
-            height: 70px;
-            align-items: center;
-        }
-        .logo img {
-            display: flex;
-            align-items: center;
-            margin-right: 10px;
-            border-radius: 50%;
-            height: 5rem;
-            width: 5rem;
-            padding: .5rem;
-        }
-        
-        
-        .nav a {
-            color: white;
-            margin: 0px 0px 0px 120px;
-            text-decoration: none;
-            padding: 2px 10px;
-        }
-        
-        a:hover {
-            color: black;
-            background-color: white;
-            border-radius: 1rem;
-        }
-        
-        a:active {
-            color: red;
-        }
+.navbar .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+}
 
+.logo {
+    font-weight: bold;
+    font-size: 1.8em;
+    display: flex;
+    height: 70px;
+    align-items: center;
+}
+
+.logo img {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    padding: .5rem;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background: #d6f5dc;
+}
+
+/* Hero Section */
 .hero {
-  background: url('StockCake-Joyful\ Celebratory\ Moment_1750183318.jpg') no-repeat center center/cover;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 40px;
+    flex-wrap: wrap;
 }
 
-.hero-content h1 {
-  font-size: 2.5rem;
+.hero-text {
+    flex: 1;
+    max-width: 500px;
 }
 
-.hero-content p {
-  margin: 20px 0;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+.hero-text h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.hero-text h1 span {
+    /* background: #0b6833; */
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.hero-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 .btn {
-  background-color: #e63946;
-  color: white;
-  padding: 12px 25px;
-  text-decoration: none;
-  border-radius: 5px;
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgb(206, 7, 7);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
 }
 
-.about {
-  background-color: #f9f9f9;
-  padding: 40px;
-  text-align: center;
+.btn:hover {
+    background: #0a5a2c;
 }
 
-.about h2 {
-  color: #b30059;
-  font-size: 28px;
-  margin: 20px;
+/* Hero Image */
+.hero-image {
+    flex: 1;
+    text-align: center;
 }
 
-.about p {
-  font-size: 18px;
-  color: #333;
-  max-width: 800px;
-  margin: 10px auto;
+.hero-image img {
+    width: 70%;
 }
 
-h2 {
-  color: #e63946;
-}
-
-#impact-stories {
-  text-align: center;
-  padding: 40px;
-  background-color: #fff;
-}
-
-.stories-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 20px;
-}
-
-.story {
-  background: #f1f1f1;
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 300px;
-}
-
-.story img {
-  width: 250px;
-  height: 300px;
-  border-radius: 50%;
-}
-
-.pagination {
-  margin-top: 30px;
-}
-
-.pagination button {
-  padding: 8px 16px;
-  margin: 0 5px;
-  background-color: #b30059;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
 
 .footer {
-  background-color: #e63946;
   color: white;
+  padding-top: 50px;
+  margin-top: 50px;
+  align-items: center;
+}
+
+
+.footer-bottom {
   text-align: center;
-  padding: 30px 20px;
+  padding: 20px;
+  background:rgb(206, 7, 7);
+  font-size: 0.9rem;
 }
 
-.footer .social a {
-  margin: 0 10px;
-  color: white;
-  font-size: 1.5em;
-  float: left;
-}
 
-.footer .newsletter form {
-  margin-top: 15px;
-}
 
-.footer input[type="email"] {
-  padding: 10px;
-  width: 200px;
-  border: none;
-  border-radius: 5px;
-}
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
 
-.footer button {
-  padding: 10px 15px;
-  background: white;
-  color: #e63946;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+    .hero-text h1 {
+        font-size: 2rem;
+    }
 }

@@ -4,204 +4,254 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community</title>
-    <style>
-        * {
-            font-family: Sans-Serif;
-        }
+<style>
+/* whole page */
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-        body {
-            background-image: url(images/backcomm.png);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
+/* body */
+body{
+  background-image: url(./images/backcomm.png);
+  padding-top: 70px; 
+  margin-top: 3rem;
+}
 
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: red;
-            color: white;
-            padding: 15px 30px;
-            max-width: 100%;
-        }
+/* header place */
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 97.5%;
+  background-color: red;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+}
 
-        /* .logo {
-            font-weight: bold;
-            font-size: 1.2em;
-            padding-left: 40px;
-            display: flex;
-            height: 70px;
-            width: 60px;
-        } */
-        .logo {
-            font-weight: bold;
-            font-size: 1.8em;
-            display: flex;
-            height: 70px;
-            align-items: center;
-        }
+/* logo place */
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
 
-        .logo img {
-            display: flex;
-            align-items: center;
-            margin-right: 10px;
-            border-radius: 50%;
-            height: 5rem;
-            width: 5rem;
-            padding: .5rem;
-        }
+/* logo */
+.logo img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 8rem;
+}
 
-        .nav a {
-            color: white;
-            margin: 0px 0px 0px 120px;
-            text-decoration: none;
-            padding: 2px 10px;
-        }
+/* nav bar */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 8rem;
+}
 
-        a:hover {
-            color: black;
-            background-color: white;
-            border-radius: 1rem;
-        }
+/* nav space oround */
+.nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px 15px;
+}
 
-        a:active {
-            color: red;
-        }
+/* nav a hover */
+.nav a:hover {
+  color: black;
+  background-color: white;
+  border-radius: 2rem;
+}
 
-        footer {
-            background-color: #ec2c3c;
-            text-align: center;
-            padding: 2px 1px;
-            font-size: 17px;
-            color: black;
-            border-top: 1px solid #eee;
-            margin-top: 58px;
-        }
+/* h1 and h2 */
+h1,h2 {
+  text-align: center;
+  color: red;
+}
 
-        .Live {
-            width: 75px;
-            height: 75px;
-            display: flex;
-        }
+/* the section */
+section{
+    display: flex;
+}
+/* left side */
+.boxes {
+    max-width: 780px;
+    padding: 20px;
+}
 
-        img {
-            display: flex;
-            align-items: center;
-            border-radius: 50%;
-        }
+/* the comms */
+.comm1 {
+    border-radius: 8px;
+    padding: 20px 0px 10px 0px;
+    margin: 0px 50px 0px 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+    display: flex;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+}
+/* image comm1 */
+.Live {
+    width: 75px;
+    height: 75px;
+    display: flex;
+}
 
-        .comm1 {
-            border-radius: 8px;
-            padding: 20px 0px 10px 0px;
-            margin: 0px 50px 0px 0px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
-            display: flex;
-            text-align: left;
-            width: 100%;
-            box-sizing: border-box;
-            background-color: #f8f9fa;
-        }
+.comm2 {
+    border-radius: 8px;
+    padding: 20px 0px 10px 0px;
+    margin: 0px 0px 0px 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+    display: flex;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+}
 
-        .comm2 {
-            border-radius: 8px;
-            padding: 20px 0px 10px 0px;
-            margin: 0px 0px 0px 0px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
-            display: flex;
-            text-align: left;
-            width: 100%;
-            box-sizing: border-box;
-            background-color: #f8f9fa;
-        }
+.comm3 {
+    border-radius: 8px;
+    padding: 20px 0px 10px 0px;
+    margin: 0px 0px 0px 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+    display: flex;
+    text-align: start;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+}
 
-        .comm3 {
-            border-radius: 8px;
-            padding: 20px 0px 10px 0px;
-            margin: 0px 0px 0px 50px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
-            display: flex;
-            text-align: start;
-            width: 100%;
-            box-sizing: border-box;
-            background-color: #f8f9fa;
-        }
+/* images */
+img {
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: 2rem;
+}
 
-        section {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+/* paragraphs */
+p {
+    line-height: 1.6;
+    color: #444;
+    text-align: left;
+}
 
-        h2 {
-            color: red;
-            margin-top: 0;
-            text-align: left;
-            display: block;
-        }
+/* horizontal line */
+hr{
+  width: 60%;
+  align-content: center;
+  color: red;
+  text-decoration-thickness: 1rem;
+}
 
-        p {
-            line-height: 1.6;
-            color: #444;
-            text-align: left;
-        }
+/* right side */
+.box{
+    text-align: center;
+}
 
-        .boxes {
-            display: flex;
-        }
-    </style>
+/* img */
+.image{
+    margin-left: 10rem;
+}
+
+/* footer */
+footer {
+  background-color: black;
+  text-align: center;
+  padding: 2px 1px;
+  font-size: 17px;
+  color: white;
+  border-top: 1px solid #eee;
+  margin-top: 58px;
+}
+</style>
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo">
-            <img src="images/RRI LOGO.jpg"
-                alt="Map of Tanzania with a red awareness ribbon overlaid on the national flag colors, two hands reaching toward each other, and the text Red Ribbon Initiative at the top and Education Prevention Better Life at the bottom. The design conveys hope and community support in an educational and preventive health context.">Red
-            Ribbon Initiative
-        </div>
-        <nav class=" nav ">
-            <a href="index.html ">Home</a>
-            <a href="learn.html ">Learn</a>
-            <a href="community.html ">Community</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html ">Contact</a>
-        </nav>
-    </header>
-    <section>
-        <h1><u>Community</u></h1>
+<!-- Navigation -->
+<div class="container">
+  <div class="logo">
+    <img src="images/RRI LOGO.jpg" alt="Red Ribbon Initiative Logo" />
+    <span style="margin-left: 1rem;"><b>Red Ribbon Initiative</b></span>
+  </div>
 
+<!-- nav bar -->
+  <nav class="nav">
+    <a href="index.html"><b>Home</b></a>
+    <a href="learn.html"><b>Learn</b></a>
+    <a href="community.html"><b>Community</b></a>
+    <a href="about.html"><b>About Us</b></a>
+    <a href="contact.html"><b>Contact</b></a>
+  </nav>
+</div>
 
-        <br>
-        <div class="boxes ">
-            <div class="comm1 ">
-                <div><img src="Forums & Live Chats.jpeg " alt=" " class="Live "></div>
-                <div>
-                    <h2>Forums and Live Chats</h2>
-                    <p>Engage in our community forums and join live chat sessions to connect and share experiences.</p>
-                </div>
+<!-- head -->
+<h1><b>COMMUNITY</b></h1>
+<hr>
+   <br>
+
+<section>
+
+   <!-- left side -->
+<div class="boxes ">
+    <div class="comm1 ">
+        <div><img src="Forums & Live Chats.jpeg " alt=" " class="Live "></div>
+        <div>
+            <h2>Forums and Live Chats</h2>
+            <hr>
+                <p>Engage in our community forums and join live chat sessions to connect and share experiences.</p>
+         </div>
+    </div>
+    <br>
+    <div class="comm2 ">
+        <div><img src="Elimika Kiganjani.jpeg " alt=" "></div>
+            <div>
+                <h2>Integration with Elimika Kiganjani</h2>
+                <hr>
+                <p>Access additional resources and discussions effortlessly through Elimika Kiganjani platform.</p>
             </div>
-            <br>
-            <div class="comm2 ">
-                <div><img src="Elimika Kiganjani.jpeg " alt=" "></div>
-                <div>
-                    <h2>Integration with Elimika Kiganjani</h2>
-                    <p>Access additional resources and discussions effortlessly through Elimika Kiganjani platform.</p>
-                </div>
+    </div>
+    <br>
+    <div class="comm3 ">
+        <div><img src="Q&A.jpeg " alt=" "></div>
+            <div>
+            <h2>Q&A with Doctors</h2>
+            <hr>
+                <p>Participate in regular questions and answer sessions with qualified health professionals.</p>
             </div>
-            <br>
-            <div class="comm3 ">
-                <div><img src="Q&A.jpeg " alt=" "></div>
-                <div>
-                    <h2>Q&A with Doctors</h2>
-                    <p>Participate in regular questions and answer sessions with qualified health professionals.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer>
-        <p style="text-align: center;">&copy; 2025 HIV Awareness Initiative. All rights reserved.</p>
-    </footer>
+    </div>
+</div>
+
+<!-- right side -->
+ <div class="box">
+    <h2>
+        Our Services
+    </h2>
+    <hr>
+    <div class="image">
+        <img src="./images/prevention.png">
+    </div>
+    <p>
+    <b>
+         HIV awareness and support through: panel discussions, community outreaches,<br>
+      HIV testing and counseling.
+    </b>
+    </p>
+ </div>
+</section>
+
+<!-- footer -->
+<footer>
+  <p style="text-align: center;">&copy; 2025 Red Ribbon Initiative. | All rights reserved.</p>
+</footer>
 </body>
-
 </html>

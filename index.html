@@ -21,19 +21,22 @@
 
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo">
-      <img src="images/RRI LOGO.jpg" alt="">Red Ribbon Initiative
-    </div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="learn.html ">Learn</a></li>
-      <li><a href="community.html ">Community</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="contact.html ">Contact</a></li>
-    </ul>
+<!-- Navigation -->
+<div class="container">
+  <div class="logo">
+    <img src="images/RRI LOGO.jpg" alt="Red Ribbon Initiative Logo" />
+    <span style="margin-left: 1rem;"><b>Red Ribbon Initiative</b></span>
+  </div>
+
+<!-- nav bar -->
+  <nav class="nav">
+      <a href="index.html"><b>Home</b></a>
+      <a href="learn.html"><b>Learn</b></a>
+      <a href="community.html"><b>Community</b></a>
+      <a href="about.html"><b>About Us</b></a>
+      <a href="contact.html"><b>Contact</b></a>
   </nav>
+</div>
 
   <!-- Hero Section -->
   <section class="hero">
@@ -45,35 +48,12 @@
     <div class="hero-image">
       <img src="StockCake-Joyful Celebratory Moment_1750183318.jpg" alt="Illustration" />
     </div>
-  </section>
+  </section><br><br><br><br><br><br><br><br><br><br><br>
 
-  <footer class="footer">
-
-    <div class="footer-bottom">
-      <p>&copy; 2025 Red Ribbon Initiative. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <!-- JavaScript for Mobile Menu -->
-    <script>
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const closeMenuButton = document.getElementById('close-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        function openMenu() {
-            mobileMenu.classList.remove('mobile-menu-closed');
-            mobileMenu.classList.add('mobile-menu-open');
-        }
-
-        function closeMenu() {
-            mobileMenu.classList.remove('mobile-menu-open');
-            mobileMenu.classList.add('mobile-menu-closed');
-        }
-
-        mobileMenuButton.addEventListener('click', openMenu);
-        closeMenuButton.addEventListener('click', closeMenu);
-    </script>
-
+  <!-- footer -->
+<footer>
+  <p style="text-align: center;">&copy; 2025 Red Ribbon Initiative. | All rights reserved.</p>
+</footer>
 </body>
 
 </html>

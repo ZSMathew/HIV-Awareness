@@ -4,185 +4,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HIV Awareness</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f7f7f7;
-        }
+    <title>Learn</title>
+ <style>
+/* whole page */
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-        header {
-            background: #f70a0a;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
+/* body */
+body{
+  background-color: cornsilk;
+  padding-top: 70px; 
+}
 
-        .intro-section,
-        .protect-section {
-            padding: 30px;
-            background: #fff;
-            margin: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
+ /* header place */
+ .container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: red;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+  }
+  
+  /* logo place */
+  .logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  /* logo */
+  .logo img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 3rem;
+  }
+  
+  /* nav bar */
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 3rem;
+  }
+  
+  /* nav space oround */
+  .nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+  
+  /* nav a hover */
+  .nav a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+  }
 
-        .intro-section p {
-            align-items: center;
-            align-content: center;
-        }
 
-        .intro-section h2,
-        .protect-section h2 {
-            color: #222;
-        }
+/* h1 */
+h1, h2{
+  text-align: center;
+  color: red;
+}
 
-        .image-row {
-            display: flex;
-            justify-content: center;
-            gap: 10%;
-            margin: 20px;
-            /* width: 100%; */
-        }
+/* horizontal line */
+hr{
+  width: 100%;
+  align-content: center;
+  color: red;
+  text-decoration-thickness: 1rem;
+}
 
-        .image-row img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-        }
+/* intro box */
+.intro-section{
+    padding: 30px;
+    background: white;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-        footer {
-            background: #f70a0a;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
+.intro-section p {
+    align-items: center;
+    align-content: center;
+}
 
-        .sidebar_menu {
-            position: fixed;
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 250px;
-            background-color: #222;
-            color: #fff;
-            transform: translateX(-250px);
-            transition: transform 0.3s ease;
-        }
+/* boxis */
+.protect-section {
+    display: flex;
+}
 
-        #check:checked~.sidebar_menu {
-            transform: translateX(0);
-        }
+/* body boxes */
+.part{
+    padding: 30px;
+    background: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;   
+}
 
-        .btn_one,
-        .btn_two {
-            position: fixed;
-            top: 15px;
-            left: 15px;
-            font-size: 24px;
-            cursor: pointer;
-            color: white;
-            z-index: 1000;
-        }
+/* images */
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin: 20px;
+}
 
-        .btn_two {
-            left: 215px;
-        }
+/* image style */
+.image-row img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
-        .sidebar_menu .logo {
-            padding: 20px;
-            background-color: #f70a0a;
-            text-align: center;
-        }
 
-        .sidebar_menu .logo a {
-            color: white;
-            font-size: 24px;
-            text-decoration: none;
-            display: block;
-        }
+/* button */
+button{
+    padding: 15px;
+    border: none;
+    margin-left: 2rem;
+    border-radius: 2rem;
+}
 
-        .sidebar_menu .menu ul {
-            list-style: none;
-            padding: 0;
-        }
+/* button info */
+button a {
+    color: white;
+    font-weight: 800;
+    background-color: red;
+    direction: none;
+}
 
-        .sidebar_menu .menu ul li {
-            padding: 15px 20px;
-        }
-
-        .sidebar_menu .menu ul li a {
-            color: white;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-        }
-
-        .sidebar_menu .menu ul li a i {
-            margin-right: 10px;
-        }
-
-        input[type="checkbox"] {
-            display: none;
-        }
-
-        button a {
-            color: #fff;
-            font-weight: 800;
-        }
-    </style>
+/* footer */
+footer {
+  background: red;
+  text-align: center;
+  padding: 2px 1px;
+  font-size: 17px;
+  color: white;
+  border-top: 1px solid #eee;
+  margin-top: 58px;
+}
+</style>
 </head>
 
 <body>
-    <input type="checkbox" id="check">
-    <div class="btn_one">
-        <label for="check">
-            <i class="fas fa-bars"></i>
-        </label>
+<!-- Navigation -->
+<div class="container">
+    <div class="logo">
+      <img src="images/RRI LOGO.jpg" alt="Red Ribbon Initiative Logo" />
+      <span style="margin-left: 1rem;"><b>Red Ribbon Initiative</b></span>
     </div>
+  
+  <!-- nav bar -->
+    <nav class="nav">
+        <a href="index.html"><b>Home</b></a>
+        <a href="learn.html"><b>Learn</b></a>
+        <a href="community.html"><b>Community</b></a>
+        <a href="about.html"><b>About Us</b></a>
+        <a href="contact.html"><b>Contact</b></a>
+    </nav>
+  </div>
+  
+        <h1><b>HIV Awareness</b></h1>
+        <hr>
 
-    <div class="sidebar_menu">
-        <div class="logo">
-            <a href="index.html">RR Initiative</a>
-            <img src="images/RRI LOGO.jpg" alt="ribbon" style="width: 100px; border-radius: 50%; ">
-        </div>
-        <div class="btn_two">
-            <label for="check">
-                <i class="fas fa-times"></i>
-            </label>
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-                <li><a href="learn.html"><i class="fas fa-book-reader"></i> Learn</a></li>
-                <li><a href="community.html"><i class="fas fa-users"></i> Community</a></li>
-                <li><a href="about.html"><i class="fas fa-hands-helping"></i> About Us</a></li>
-                <li><a href="contact.html"><i class="fas fa-phone"></i> Contact</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <header>
-        <h1>HIV Awareness</h1>
-    </header>
 
     <div class="image-row">
-        <img src="images/jane.jpg" alt="person1">
-        <img src="images/Jane 2.jpg" alt="person2">
-        <img src="images/m2.jpg" alt="person3">
-        <img src="images/Michael.jpg" alt="person4">
+        <img src="images/test.png" alt="person1">
+        <img src="images/virus.png" alt="person2">
+        <img src="images/prevention.png" alt="person3">
+        <img src="images/drop.png" alt="person4">
     </div>
 
     <div class="intro-section">
-        <h2>Introduction</h2>
-        <span>Welcome to our HIV Awareness learning page. Here, you'll find clear, accurate information about HIV,
+        <h2><b>Introduction</b></h2>
+        <hr>
+        <span><b>Welcome to our HIV Awareness learning page.</b> Here, you'll find clear, accurate information about HIV,
             how it's transmitted, how to protect yourself and others, and what it means to live with HIV today.
             Our goal is to empower you with knowledge, dispel myths, and foster a supportive community.
             Understanding HIV is the first step towards prevention,
@@ -191,7 +202,9 @@
     </div>
 
     <div class="protect-section">
-        <h2>What is HIV?</h2>
+<div class="part">
+    <h2><b>What is HIV?</b></h2>
+    <hr>
         <ul>
             <li>HIV stands for Human Immunodeficiency Virus. It's a virus that attacks the body's immune system.</li> <br>
             <li>The immune system helps the body fight off infections and diseases. HIV targets and destroys CD4 cells
@@ -202,7 +215,10 @@
             <li>Important: With early diagnosis and consistent treatment, people with HIV can prevent the progression to
                 AIDS and live long, healthy lives.</li> <br>
         </ul>
-         <h2>How is HIV Transmitted?</h2>
+</div>
+<div class="part">
+    <h2><b>How is HIV Transmitted?</b></h2>
+    <hr>
         <ul>
            
             <span> HIV can be transmitted through specific bodily fluids from an infected person that come into contact
@@ -214,8 +230,11 @@
                 <li>Vaginal fluids</li> <br>
                 <li>Breast milk</li> <br>
         </ul>
+</div>
 
-        <h2>HIV is NOT transmitted through:</h2>
+<div class="part">
+    <h2><b>HIV is NOT transmitted through:</b></h2>
+    <hr>
         <ul>
             <li> Air or water </li> <br>
             <li> Saliva, sweat, or tears (if not mixed with blood) </li> <br>
@@ -224,13 +243,13 @@
             <li> Hugging, shaking hands, or casual contact </li> <br>
             <li> Using the same toilets or showers </li> <br>
         </ul>
-         <button type="button" class="btn btn-info"><a href="more.html"> FOR MORE INFO</a></button>
+</div>
     </div>
     
-
+    <button type="button" class="btn btn-info" style="background-color: red; direction: none;"><a href="more.html"> For more info</a></button>
     <footer>
-        <p>&copy; 2025 HIV Awareness Initiative. All rights reserved.</p>
-    </footer>
+        <p style="text-align: center;">&copy; 2025 Red Ribbon Initiative. | All rights reserved.</p>
+      </footer>
 </body>
 
 </html>

@@ -7,10 +7,11 @@
 }
 
 body {
-    background: #4ad48f;
     color: #333;
     margin-top: 4rem;
-    background-image: url(./images/imag.png);
+    background-image: url(./images/rr2.jpg);
+    opacity: 0.8;
+    height: 100%;
 }
 
  /* header place */

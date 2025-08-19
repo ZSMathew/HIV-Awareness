@@ -7,61 +7,66 @@
 }
 
 body {
-    background: #4ad48f;
     color: #333;
+    margin-top: 4rem;
+    background-image: url(./images/rr2.jpg);
+    opacity: 0.8;
+    height: 100%;
 }
 
-/* Navbar */
-.navbar {
-    background: rgb(206, 7, 7);
+ /* header place */
+ .container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: red;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.navbar .logo {
-    font-weight: bold;
-    font-size: 1.5rem;
-    color: #fff;
-}
-
-.logo {
-    font-weight: bold;
-    font-size: 1.8em;
-    display: flex;
-    height: 70px;
-    align-items: center;
-}
-
-.logo img {
+    padding: 10px 20px;
+    z-index: 1000;
+  }
+  
+  /* logo place */
+  .logo {
     display: flex;
     align-items: center;
-    margin-right: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  /* logo */
+  .logo img {
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
-    height: 5rem;
-    width: 5rem;
-    padding: .5rem;
-}
-
-.navbar ul {
+    margin-left: 3rem;
+  }
+  
+  /* nav bar */
+  .nav {
     display: flex;
-    list-style: none;
-    gap: 30px;
-}
-
-.navbar a {
+    flex-wrap: wrap;
+    margin-right: 3rem;
+  }
+  
+  /* nav space oround */
+  .nav a {
+    color: white;
+    margin: 0 10px;
     text-decoration: none;
-    color: #fff;
-    font-weight: 700;
-    padding: 6px 12px;
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+  
+  /* nav a hover */
+  .nav a:hover {
+    color: black;
+    background-color: white;
     border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.navbar a:hover {
-    background: #d6f5dc;
-}
+  }
 
 /* Hero Section */
 .hero {
@@ -107,13 +112,14 @@ body {
 }
 
 .btn:hover {
-    background: #0a5a2c;
+    background: blue;
 }
 
 /* Hero Image */
 .hero-image {
     flex: 1;
     text-align: center;
+    border-radius: 5rem;
 }
 
 .hero-image img {
@@ -121,20 +127,16 @@ body {
 }
 
 
-.footer {
-  color: white;
-  padding-top: 50px;
-  margin-top: 50px;
-  align-items: center;
-}
-
-
-.footer-bottom {
-  text-align: center;
-  padding: 20px;
-  background:rgb(206, 7, 7);
-  font-size: 0.9rem;
-}
+/* footer */
+footer {
+    background: red;
+    text-align: center;
+    padding: 10px 1px;
+    font-size: 17px;
+    color: white;
+    border-top: 1px solid #eee;
+    margin-top: 58px;
+  }
 
 
 

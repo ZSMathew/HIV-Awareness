@@ -140,14 +140,26 @@ button{
     border-radius: 2rem;
 }
 
-/* button info */
-button a {
-    color: white;
-    font-weight: 800;
-    background-color: red;
-    direction: none;
-}
+/* btn hover */
+.my-btn {
+      display: inline-block;
+      background-color: red;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s; 
+      margin-left: 3rem;
+    }
 
+    /* Hover effect */
+    .my-btn:hover {
+      background-color: blue; /* rangi mpya wakati wa hover */
+    }
 /* footer */
 footer {
   background: red;
@@ -246,7 +258,7 @@ footer {
 </div>
     </div>
     
-    <button type="button" class="btn btn-info" style="background-color: red; direction: none;"><a href="more.html"> For more info</a></button>
+    <a href="more.html" class="my-btn">For more info</a>
     <footer>
         <p style="text-align: center;">&copy; 2025 Red Ribbon Initiative. | All rights reserved.</p>
       </footer>

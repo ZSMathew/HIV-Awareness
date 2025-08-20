@@ -389,11 +389,11 @@
   <!-- Home -->
   <section class="hero">
     <div class="slides" id="slides">
-      <div class="slide" style="background-image: url('image/hiv1.jpg');"></div>
-      <div class="slide" style="background-image: url('image/hiv2.jpg');"></div>
-      <div class="slide" style="background-image: url('image/hiv1.jpg');"></div>
-      <div class="slide" style="background-image: url('image/hiv2.jpg');"></div>
-      <div class="slide" style="background-image: url('image/hiv4.jpg');"></div>
+      <div class="slide" style="background-image: url('images/hiv1.jpg');"></div>
+      <div class="slide" style="background-image: url('images/hiv2.jpg');"></div>
+      <div class="slide" style="background-image: url('images/hiv1.jpg');"></div>
+      <div class="slide" style="background-image: url('images/hiv2.jpg');"></div>
+      <div class="slide" style="background-image: url('images/hiv4.jpg');"></div>
     </div>
 
     <div class="overlay">
@@ -485,10 +485,10 @@
   <section class="partners">
     <h2 style="color: red;">Our Partners</h2>
     <div class="partner-grid">
-      <div class="partner"><img src="image/partener2.webp" alt="partner1"></div>
-      <div class="partner"><img src="image/partener2.webp" alt="partner2"></div>
-      <div class="partner"><img src="image/partener2.webp" alt="partner3"></div>
-      <div class="partner"><img src="image/partener2.webp" alt="partner4"></div>
+      <div class="partner"><img src="images/lazri.jpg" alt="lazri"></div>
+      <div class="partner"><img src="images/who.png" alt="who"></div>
+      <div class="partner"><img src="images/tume_logo.png" alt="tume"></div>
+      <div class="partner"><img src="images/kcmc_logo.png" alt="kmc"></div>
     </div>
   </section>
 
@@ -529,30 +529,40 @@
     </div>
 </footer>
 <script>
-    let currentIndex = 0;
-    const slides = document.querySelector("#slides");
-    const totalSlides = slides.children.length;
+  let currentIndex = 0;
+  let direction = 1; // 1 = forward, -1 = backward
+  const slides = document.querySelector("#slides");
+  const totalSlides = slides.children.length;
 
-    function showSlide(index) {
-      if (index >= totalSlides) currentIndex = 0;
-      else if (index < 0) currentIndex = totalSlides - 1;
-      else currentIndex = index;
+  function render() {
+    slides.style.transition = "transform 1s ease-in-out";
+    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
 
-      slides.style.transition = "transform 1s ease-in-out";
-      slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
+  function tick() {
+    // Reverse direction at the ends
+    if (currentIndex === totalSlides - 1) direction = -1;
+    else if (currentIndex === 0) direction = 1;
 
-    function nextSlide() {
-      showSlide(currentIndex + 1);
-    }
+    currentIndex += direction;
+    render();
+  }
 
-    function prevSlide() {
-      showSlide(currentIndex - 1);
-    }
+  // Buttons (optional)
+  function nextSlide() {
+    direction = 1;
+    tick();
+  }
 
-    // Auto slide every 20s
-    setInterval(nextSlide, 20000);
-  </script>
+  function prevSlide() {
+    direction = -1;
+    tick();
+  }
+
+  // Auto slide every 3s
+  const auto = setInterval(tick, 3000);
+</script>
+
 
 </body>
 </html>
